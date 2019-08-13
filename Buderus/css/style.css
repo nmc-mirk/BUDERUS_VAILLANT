@@ -71,13 +71,88 @@ button, a { cursor: pointer; }
   content: unset;
 }
 
+/* Слайдер */
 
+.section_slider{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.section_slider_content_text{
+  margin-left: 20.2083rem;
+  margin-top: 7.9166rem;
+}
+.section_slider_content_text_header{
+  width: 17.9166rem;
+  font-weight: 300;
+  font-size: 2.0833rem;
+  line-height: 2.4479rem;
+  letter-spacing: -0.052rem;
+  margin-bottom: 1.3020rem;
+}
+.section_slider_content_text_body{
+  width: 21.5104rem;
+  font-size: 0.9375rem;
+  line-height: 1.3541rem;
+  letter-spacing: -0.026rem;
+}
+.section_slider_gray_area{
+  position: absolute;
+  display: flex;
+  left: 46.3541rem;
+  top: 20.2083rem;
+}
+.section_slider_gray_block{
+  width: 15.625rem;
+  height: 7.5rem;
+  background:#9DAFBD;
+  margin-right: 2.0833rem;
+}
+.white_text{
+  font-size: 0.9375rem;
+  line-height: 1.3541rem;
+  letter-spacing: -0.026rem;
+  color: white;
+}
+.advantages{
+  margin-top: 3.3854rem;
+  margin-left: 1.4062rem;
+}
+.service{
+  margin-left: 1.4062rem;
+  margin-top: 1.4583rem;
+  margin-bottom: 0.5208rem;
+}
+.website_container{
+  display: flex;
+  justify-content: center;
+}
+.website{
+  font-size: 0.9375rem;
+  line-height: 1.1979rem;
+  padding: 0.9375rem 4.0103rem;
+  box-sizing: border-box;
+  border: 0.052rem solid #FFFFFF;
+  color: white;
+}
+.website:hover{
+  color: white;
+  text-decoration: none;
+}
+.section_slider_content_img{
+
+}
+.section_slider_content_img_pic{
+  width: 49.375rem;
+  height: 30.4166rem;
+}
 
 
 
 /* оставить внизу + все идентичное сюда же */
 .container--main {
-  max-width: 1140px; 
+  max-width: 59.375rem; 
   margin: 0 auto;
   position: relative;
 }
@@ -135,4 +210,7 @@ width: .625rem;
   font-size: .9375rem;
   line-height: 1.0937rem;
   padding: 0 1.3020rem !important; 
+}
+p{
+  margin:0rem;
 }
