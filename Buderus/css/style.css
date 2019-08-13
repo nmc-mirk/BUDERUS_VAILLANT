@@ -145,7 +145,65 @@ button, a { cursor: pointer; }
   height: 30.4166rem;
 }
 
-
+/* Преимущества */
+.main__section-advantages{
+  background: #002D59;
+  margin-bottom: 1.4958rem;
+}
+.advantages__header{
+  margin-top: 1.5625rem;
+  margin-bottom: 2.0312rem;
+}
+.advantages{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.advantages__section-body{
+  display: flex;
+  margin-bottom: 1.4958rem;
+}
+.advantages__body{
+  display: flex;
+}
+.body__item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.body__item__wrench{
+  width: 12.2395rem;
+  margin-right: 4.0375rem;
+}
+.body__item__badge{
+  width: 13.2812rem;
+  margin-right: 3.802rem;
+}
+.body__item__money{
+  width: 12.2395rem;
+  margin-right: 6.25rem;
+}
+.img--wrench{
+  width: 3.5937rem;
+  height: 3.2812rem;
+  margin-bottom: 1.1302rem;
+}
+.img--badge{
+  width: 3.5937rem;
+  height: 3.5937rem;
+  margin-bottom: 0.7812rem;
+}
+.img--money{
+  width: 3.0729rem;
+  height: 3.0729rem;
+  margin-bottom: 1.0416rem;
+}
+.img--feature{
+  width: 5.1562rem;
+  height: 7.0833rem;
+  margin-bottom: 1.1979rem;
+}
 
 /* оставить внизу + все идентичное сюда же */
 .container--main {
@@ -162,7 +220,7 @@ button, a { cursor: pointer; }
 }
 
 .icon--adress{
-width: .625rem;
+  width: .625rem;
 }
 
 .icon--buderus{
@@ -177,6 +235,29 @@ width: .625rem;
   letter-spacing: -.0156rem;
   line-height: .7812rem;
   padding-bottom: .5rem;
+}
+.text-header{
+  font-weight: 300;
+  font-size: 2.0833rem;
+  line-height: 2.4479rem;
+  text-align: center;
+  letter-spacing: 0.052rem;
+  text-transform: capitalize;
+  color: white;
+}
+.text--title{
+  text-transform: capitalize;
+  font-size: 1.0416rem;
+  line-height: 1.3541rem;
+  text-align: center;
+  letter-spacing: -0.026rem;
+  color: #FFFFFF;
+  margin-bottom: 0.402rem;
+}
+.text--paragraph{
+  font-size: 0.7291rem;
+  line-height: 0.8333rem;
+  color: #FFFFFF;
 }
 
 /* BOOTSTRAP */
