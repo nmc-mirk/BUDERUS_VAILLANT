@@ -281,6 +281,7 @@ button, a { cursor: pointer; }
 }
 
 /* Фидбэк */
+
 .main__section-feedback{
   background: #002D59;
 }
@@ -299,8 +300,26 @@ button, a { cursor: pointer; }
   line-height: 3.3333rem;
   color: white;
 }
+.feedback__section-description{
+  display: flex; justify-content: center
+}
 .feedback__desciption{
 width: 33.6458rem;
+margin-bottom: 0.625rem;
+}
+.btn--form{
+  color: #fff;
+  background-color: #002D59;
+  border-color: white;
+  border: 0.1rem solid white;
+  width: 23.4375rem;
+  height: 3.125rem;
+  font-weight: 500;
+  font-size: 0.8333rem;
+  line-height: 0.9895rem;
+  margin-top: 0.9895rem;
+  margin-bottom: 0.9375rem;
+
 }
 .text--fill{
 font-size: 0.9375rem;
@@ -316,6 +335,53 @@ line-height: 1.0146rem;
 text-align: center;
 letter-spacing: -0.026rem;
 color: #FFFFFF;
+}
+.feedback__policy{
+  display: flex;
+  justify-content: center;
+  margin-top: 0.625rem;
+  margin-bottom: 1.4062rem;
+}
+.text--policy{
+  font-size: 0.7291rem;
+  line-height: 1.0416rem;
+  text-align: center;
+  letter-spacing: -0.026rem;
+  color: #FFFFFF;
+}
+.link--policy{
+  font-size: 0.7291rem;
+  line-height: 1.0416rem;
+  text-align: center;
+  letter-spacing: -0.026rem;
+  color: #FFFFFF;
+}
+.link--policy:hover{
+  color: #FFFFFF;
+}
+
+/* Инфо */
+
+.info{
+  display:flex;
+  justify-content: space-between;
+}
+.text--info_header{
+  font-weight: 300;
+  font-size: 1.5104rem;
+  line-height: 2.3958rem;
+  letter-spacing: -0.0052rem;
+  color: #002D59;
+  width: 26.6343rem;
+  margin-top: 2.9687rem;
+  padding-bottom: 2.3958rem;
+}
+.text--info_body{
+  font-size: 0.9375rem;
+  line-height: 1.4583rem;
+  color: #3C3C3B;
+  width: 28.2812rem;
+  margin-top: 3.4375rem;
 }
 
 /* оставить внизу + все идентичное сюда же */
