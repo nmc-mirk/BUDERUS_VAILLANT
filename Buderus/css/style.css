@@ -227,7 +227,29 @@ button, a { cursor: pointer; }
   margin-left: 3.2812rem;
 }
 
-
+/* Комплекты */
+.kits__header{
+  margin-top: 5rem;
+  margin-bottom: 0.3645rem;
+}
+.kits__checkout{
+  display: flex;
+  margin-top: 2.1875rem;
+}
+.selector__option{
+  display: flex;
+}
+.img--slider{
+  width: 30.5729rem;
+  height: 23.1770rem;
+}
+.checkout__switch{
+  height: 12.9166rem;
+  border: 1px solid #9DAFBD;
+  margin-top: 1.5625rem;
+  margin-left: 3.2812rem;
+  margin-right: 1.7708rem;
+}
 /* оставить внизу + все идентичное сюда же */
 .container--main {
   max-width: 59.375rem; 
@@ -251,7 +273,11 @@ button, a { cursor: pointer; }
   width: auto;
   margin: unset;
 }
-
+.icon--i{
+  display: inline;
+  margin: unset;
+  margin-left: 1.0416rem;
+}
 
 /* Текст */
 .text--logo{
@@ -304,6 +330,28 @@ button, a { cursor: pointer; }
   color: #3C3C3B;
   margin-bottom: 1.8229rem;
 }
+.text--option{
+  font-size: 0.8333rem;
+  line-height: 0.9895rem;
+  color: #3C3C3B;
+  margin-top: 0.2604rem;
+  margin-bottom: 0.7812rem;
+}
+.text--price{
+  font-weight: 300;
+  font-size: 2.0833rem;
+  line-height: 2.4479rem;
+  letter-spacing: -0.052rem;
+  color: #373737;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+.text--note{
+font-size: 0.7291rem;
+line-height: 1.0937rem;
+letter-spacing: -0.026rem;
+color: #9DAFBD;
+}
 
 /* BOOTSTRAP */
 
@@ -336,4 +384,53 @@ button, a { cursor: pointer; }
 }
 p{
   margin:0rem;
+}
+.btn{
+  border-radius: 0rem;
+  border-bottom: 1px solid transparent;
+}
+.btn-secondary {
+  color: #A1AEB7;
+  background-color: transparent;
+  border-color: #A1AEB7;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  color: #002D59;
+  background-color: transparent;
+  border-color: #002D59;
+}
+.btn-secondary:hover {
+  color: #002D59;
+  background-color: transparent;
+  border-color: #002D59;
+}
+.form-control{
+  border-radius: 0rem;
+  width: 23.4375rem;
+  height: 3.125rem;
+  color:#3C3C3B; 
+  font-size: 0.8333rem;
+  line-height: 0.9895rem;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #002D59;
+  border-color: #002D59;
+  width: 23.4375rem;
+  height: 3.125rem;
+  font-weight: 500;
+  font-size: 0.8333rem;
+  line-height: 0.9895rem;
+  margin-top: 0.9895rem;
+  margin-bottom: 0.9375rem;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #002D59;
+  border-color: #002D59;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #002D59;
+  border-color: #002D59;
 }
