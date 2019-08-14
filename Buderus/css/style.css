@@ -91,12 +91,6 @@ button, a { cursor: pointer; }
   letter-spacing: -0.052rem;
   margin-bottom: 1.3020rem;
 }
-.section__text__body{
-  width: 21.5104rem;
-  font-size: 0.9375rem;
-  line-height: 1.3541rem;
-  letter-spacing: -0.026rem;
-}
 .slider__section__gray-area{
   position: absolute;
   display: flex;
@@ -250,6 +244,34 @@ button, a { cursor: pointer; }
   margin-left: 3.2812rem;
   margin-right: 1.7708rem;
 }
+
+/* Акция */
+
+.stock{
+  display: flex;
+  flex-direction: column;
+}
+.stock__section-header{
+  margin-top: 5rem;
+}
+.stock__section-body{
+  margin-top: 0.4687rem;
+}
+.stock__event{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.0833rem;
+}
+.img--stock{
+  width: 8.6458rem;
+  height: 9.1616rem;
+}
+.event__item__description{
+  background: #EFF0F1;
+  width: 8.6458rem;
+  height: 7.7604rem;
+}
+
 /* оставить внизу + все идентичное сюда же */
 .container--main {
   max-width: 59.375rem; 
@@ -276,7 +298,6 @@ button, a { cursor: pointer; }
 .icon--i{
   display: inline;
   margin: unset;
-  margin-left: 1.0416rem;
 }
 
 /* Текст */
@@ -294,6 +315,12 @@ button, a { cursor: pointer; }
   letter-spacing: 0.052rem;
   text-transform: capitalize;
   color: white;
+}
+.text--body{
+  width: 21.5104rem;
+  font-size: 0.9375rem;
+  line-height: 1.3541rem;
+  letter-spacing: -0.026rem;
 }
 .text--icon_title{
   text-transform: capitalize;
@@ -336,6 +363,7 @@ button, a { cursor: pointer; }
   color: #3C3C3B;
   margin-top: 0.2604rem;
   margin-bottom: 0.7812rem;
+  margin-right: 1.0416rem;
 }
 .text--price{
   font-weight: 300;
@@ -351,6 +379,46 @@ font-size: 0.7291rem;
 line-height: 1.0937rem;
 letter-spacing: -0.026rem;
 color: #9DAFBD;
+}
+.text--stock{
+font-size: 0.9375rem;
+line-height: 1.3541;
+letter-spacing: -0.026rem;
+color: #373737;
+}
+.text--name{
+  font-size: 0.8333rem;
+  line-height: 0.9895rem;
+  color: #3C3C3B;
+  padding-top: 0.9375rem;
+  margin-left: 0.7812rem;
+}
+.text--old_price{
+  font-size: 0.7291rem;
+  line-height: 0.8333rem;
+  letter-spacing: -0.026rem;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: #3C3C3B;
+  margin-top: 2.5rem;
+  margin-left: 0.7812rem;
+}
+.text--new_price{
+  font-size: 0.9375rem;
+  line-height: 1.0937rem;
+  letter-spacing: -0.026rem;
+  text-transform: uppercase;
+  color: #002D59;
+  margin-top: 0.5729rem;
+  margin-left: 0.7812rem;
+}
+.text--big_note{
+font-size: 0.8333rem;
+line-height: 1.3541rem;
+text-align: center;
+letter-spacing: -0.026rem;
+color: #B4B4B4;
+margin-top: 2.4479rem;
 }
 
 /* BOOTSTRAP */
