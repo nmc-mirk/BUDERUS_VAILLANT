@@ -205,6 +205,29 @@ button, a { cursor: pointer; }
   margin-bottom: 1.1979rem;
 }
 
+/* Специфика */
+
+.specs{
+  display: flex;
+  flex-direction: column;
+}
+.specs__section-body{
+  display: flex;
+  flex-direction: row;
+}
+.specs__header{
+  margin-top: 2.2395rem;
+  margin-bottom: 1.7708rem;
+}
+.img--specs__pic{
+  width: 30.625rem;
+  height: 24.0104rem;
+}
+.section__body-description{
+  margin-left: 3.2812rem;
+}
+
+
 /* оставить внизу + все идентичное сюда же */
 .container--main {
   max-width: 59.375rem; 
@@ -229,6 +252,7 @@ button, a { cursor: pointer; }
   margin: unset;
 }
 
+
 /* Текст */
 .text--logo{
   font-size: .6770rem;
@@ -236,7 +260,7 @@ button, a { cursor: pointer; }
   line-height: .7812rem;
   padding-bottom: .5rem;
 }
-.text-header{
+.text-blue_header{
   font-weight: 300;
   font-size: 2.0833rem;
   line-height: 2.4479rem;
@@ -245,7 +269,7 @@ button, a { cursor: pointer; }
   text-transform: capitalize;
   color: white;
 }
-.text--title{
+.text--icon_title{
   text-transform: capitalize;
   font-size: 1.0416rem;
   line-height: 1.3541rem;
@@ -254,10 +278,31 @@ button, a { cursor: pointer; }
   color: #FFFFFF;
   margin-bottom: 0.402rem;
 }
-.text--paragraph{
+.text--icon_paragraph{
   font-size: 0.7291rem;
   line-height: 0.8333rem;
   color: #FFFFFF;
+}
+.text--bold{
+  font-weight: 600;
+}
+.text--header{
+  font-weight: 300;
+  font-size: 2.0833rem;
+  line-height: 3.3333rem;
+  color: #3C3C3B;
+}
+.text--title{
+  font-size: 1.0416rem;
+  line-height: 1.6145rem;
+  color: #002D59;
+  margin-bottom: 0.2604rem;
+}
+.text--paragraph{
+  font-size: 0.8333rem;
+  line-height: 1.25rem;
+  color: #3C3C3B;
+  margin-bottom: 1.8229rem;
 }
 
 /* BOOTSTRAP */
