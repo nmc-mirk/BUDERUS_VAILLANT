@@ -125,7 +125,7 @@ button, a { cursor: pointer; }
 .website__container__website{
   font-size: 0.9375rem;
   line-height: 1.1979rem;
-  padding: 0.9375rem 4.0103rem;
+  padding: 0.9375rem 3.2103rem;
   box-sizing: border-box;
   border: 0.052rem solid #FFFFFF;
   color: white;
@@ -142,7 +142,6 @@ button, a { cursor: pointer; }
 /* Преимущества */
 .main__section-advantages{
   background: #002D59;
-  margin-bottom: 1.4958rem;
 }
 .advantages__header{
   margin-top: 1.5625rem;
@@ -208,6 +207,7 @@ button, a { cursor: pointer; }
 .specs__section-body{
   display: flex;
   flex-direction: row;
+  padding-bottom: 3.3333rem;
 }
 .specs__header{
   margin-top: 2.2395rem;
@@ -222,13 +222,18 @@ button, a { cursor: pointer; }
 }
 
 /* Комплекты */
+
+.main__section-kits{
+  background: #F9F9F9;
+}
 .kits__header{
-  margin-top: 5rem;
   margin-bottom: 0.3645rem;
+  padding-top: 2.1875rem;
 }
 .kits__checkout{
   display: flex;
   margin-top: 2.1875rem;
+  padding-bottom: 3.2291rem;
 }
 .selector__option{
   display: flex;
@@ -252,7 +257,7 @@ button, a { cursor: pointer; }
   flex-direction: column;
 }
 .stock__section-header{
-  margin-top: 5rem;
+  margin-top: 2.1875rem;
 }
 .stock__section-body{
   margin-top: 0.4687rem;
@@ -270,6 +275,47 @@ button, a { cursor: pointer; }
   background: #EFF0F1;
   width: 8.6458rem;
   height: 7.7604rem;
+}
+.stock__section-note{
+  margin-bottom: 1.7187rem;
+}
+
+/* Фидбэк */
+.main__section-feedback{
+  background: #002D59;
+}
+.feedback{
+  display: flex;
+  flex-direction: column;
+}
+.feedback__header{
+  text-align: center;
+  margin-top: 1.6145rem;
+  margin-bottom: 1.0937rem;
+}
+.text--feedback{
+  font-weight: 300;
+  font-size: 2.0833rem;
+  line-height: 3.3333rem;
+  color: white;
+}
+.feedback__desciption{
+width: 33.6458rem;
+}
+.text--fill{
+font-size: 0.9375rem;
+line-height: 1.3541rem;
+text-align: center;
+letter-spacing: -0.026rem;
+color: #FFFFFF;
+margin-bottom: 0.7812rem;
+}
+.text--condition{
+font-size: 0.7291rem;
+line-height: 1.0146rem;
+text-align: center;
+letter-spacing: -0.026rem;
+color: #FFFFFF;
 }
 
 /* оставить внизу + все идентичное сюда же */
@@ -344,6 +390,12 @@ button, a { cursor: pointer; }
   font-size: 2.0833rem;
   line-height: 3.3333rem;
   color: #3C3C3B;
+}
+.text--header-blue{
+  font-weight: 300;
+  font-size: 2.0833rem;
+  line-height: 3.3333rem;
+  color: #002D59;
 }
 .text--title{
   font-size: 1.0416rem;
