@@ -384,6 +384,39 @@ color: #FFFFFF;
   margin-top: 3.4375rem;
 }
 
+/* Продукт */
+
+.main__section-product{
+  background: #F9F9F9;
+}
+.product{
+  display: flex;
+  flex-direction: column;
+}
+.product__section-header{
+  margin-top: 2.1875rem;
+}
+.product__section-body{
+  margin-top: 0.4687rem;
+}
+.product__event{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.0833rem;
+}
+.img--product{
+  width: 13.75rem;
+  height: 16.3541rem;
+}
+.event__item__product-description{
+  background: #EFF0F1;
+  width: 13.75rem;
+  height: 5.1562rem;
+}
+.product__section-note{
+  margin-bottom: 1.7187rem;
+}
+
 /* оставить внизу + все идентичное сюда же */
 .container--main {
   max-width: 59.375rem; 
@@ -537,6 +570,22 @@ text-align: center;
 letter-spacing: -0.026rem;
 color: #B4B4B4;
 margin-top: 2.4479rem;
+}
+.text--product_name{
+  font-size: 0.9375rem;
+  line-height: 1.0937rem;
+  text-transform: uppercase;
+  color: #3C3C3B;
+  padding-top: 0.8854rem;
+  margin-left: 0.7812rem;
+}
+.text--product_price{
+  font-size: 1.25rem;
+  line-height: 1.4583rem;
+  letter-spacing: -0.026rem;
+  color: #002D59;
+  margin-top: 0.7812rem;
+  margin-left: 0.7812rem;
 }
 
 /* BOOTSTRAP */
