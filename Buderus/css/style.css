@@ -417,6 +417,32 @@ color: #FFFFFF;
   margin-bottom: 1.7187rem;
 }
 
+/* Контакты */
+
+.contacts{
+  display: flex;
+  margin-top: 3.0208rem;
+}
+.contacts__header{
+  margin-bottom: 2.0833rem;
+}
+.contacts__section-text{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.2812rem;
+}
+.contacts__block{
+  display: flex;
+  margin-bottom: 1.9270rem;
+}
+.contacts__phone-numbers{
+  display: flex;
+  flex-direction: column;
+}
+.link--contacts_phone{
+  margin-bottom: 0.5104rem;
+}
+
 /* оставить внизу + все идентичное сюда же */
 .container--main {
   max-width: 59.375rem; 
@@ -443,6 +469,17 @@ color: #FFFFFF;
 .icon--i{
   display: inline;
   margin: unset;
+}
+.icon--black{
+  width: 1.0416rem;
+  height: 1.0416rem;
+  margin-right: 0.677rem;
+}
+.icon--black{
+  width: 1.0416rem;
+  height: 1.0416rem;
+  margin-right: 0.677rem;
+  
 }
 
 /* Текст */
@@ -586,6 +623,27 @@ margin-top: 2.4479rem;
   color: #002D59;
   margin-top: 0.7812rem;
   margin-left: 0.7812rem;
+}
+.text--contacts{
+  font-weight: 300;
+  font-size: 2.0833rem;
+  line-height: 2.3958rem;
+  letter-spacing: -0.0052rem;
+  color: #373737;
+}
+.link--contacts{
+  font-weight: 300;
+  font-size: 0.9375rem;
+  line-height: 1.3541rem;
+  letter-spacing: -0.026rem;
+  color: #373737;
+}
+.text--service{
+font-size: 0.8333rem;
+line-height: 1.3541rem;
+letter-spacing: -0.026rem;
+color: #9DAFBD;
+margin-top: 0.5729rem;
 }
 
 /* BOOTSTRAP */
