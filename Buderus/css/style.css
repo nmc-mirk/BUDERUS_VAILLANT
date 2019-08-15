@@ -426,6 +426,9 @@ color: #FFFFFF;
 .contacts__header{
   margin-bottom: 2.0833rem;
 }
+.contacts__section-map{
+  margin-bottom: 3.5416rem;
+}
 .contacts__section-text{
   display: flex;
   flex-direction: column;
@@ -441,6 +444,32 @@ color: #FFFFFF;
 }
 .link--contacts_phone{
   margin-bottom: 0.5104rem;
+}
+
+/* Футер */
+
+.footer{
+  background-color: #3C3C3B;
+  width: 100%;
+}
+.footer__nav{
+  display: flex;
+  width: 59.375rem;
+  margin-top: 1.5rem;
+}
+.footer__section-nav{
+  border-bottom: 1px solid #4C4C4C;
+  height: 5.7291rem;
+  display: flex;
+  align-items: center;
+}
+.footer__section-bottom{
+  height: 2.6041rem;
+}
+.nav__copyright{
+  text-align: right;
+  margin-left: auto;
+  margin-top: 1rem;
 }
 
 /* оставить внизу + все идентичное сюда же */
@@ -645,6 +674,26 @@ letter-spacing: -0.026rem;
 color: #9DAFBD;
 margin-top: 0.5729rem;
 }
+.text--copyright{
+  font-size: 0.7291rem;
+  line-height: 1.0937rem;
+  text-align: right;
+  color: white;
+}
+.link--copyright{
+  font-size: 0.625rem;
+  line-height: 1.3541rem;
+  letter-spacing: -0.026rem;
+  text-decoration-line: underline;
+  color: #B4B4B4;
+}
+.text--offer{
+  font-size: 0.7291rem;
+  line-height: 1.3541rem;
+  letter-spacing: -0.026rem;
+  color: #B4B4B4;
+  text-align: center;
+}
 
 /* BOOTSTRAP */
 
@@ -656,6 +705,9 @@ margin-top: 0.5729rem;
   position: absolute;
   left: 0;
   z-index: 1;
+
+}.navbar-brand_footer {
+  margin-top: -0.3125rem;
 }
 
 .navbar-brand:hover{
@@ -667,6 +719,9 @@ margin-top: 0.5729rem;
   justify-content: center;
   margin-left: 4.8rem;
 }
+.navbar-collapse_footer{
+  margin-left: 11.1458rem;
+}
 
 .nav-link{
   color: #ffffff;
@@ -674,6 +729,16 @@ margin-top: 0.5729rem;
   font-size: .9375rem;
   line-height: 1.0937rem;
   padding: 0 1.3020rem !important; 
+}
+.nav-link_footer{
+  font-weight: bold;
+  font-size: 0.7291rem;
+  line-height: 0.8333rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+.nav-item_footer{
+  margin-right: -0.5rem;
 }
 p{
   margin:0rem;
