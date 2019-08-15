@@ -133,6 +133,7 @@ button, a { cursor: pointer; }
 .website__container__website:hover{
   color: white;
   text-decoration: none;
+  background: #758C9D;
 }
 .section__img_pic{
   width: 49.375rem;
@@ -319,7 +320,19 @@ margin-bottom: 0.625rem;
   line-height: 0.9895rem;
   margin-top: 0.9895rem;
   margin-bottom: 0.9375rem;
-
+}
+.btn--form:hover{
+  color: #fff;
+  background-color: #095790;
+  border-color: white;
+  border: 0.1rem solid white;
+  width: 23.4375rem;
+  height: 3.125rem;
+  font-weight: 500;
+  font-size: 0.8333rem;
+  line-height: 0.9895rem;
+  margin-top: 0.9895rem;
+  margin-bottom: 0.9375rem;
 }
 .text--fill{
 font-size: 0.9375rem;
@@ -429,6 +442,10 @@ color: #FFFFFF;
 .contacts__section-map{
   margin-bottom: 3.5416rem;
 }
+.contacts__map{
+  width: 30.5729rem;
+  height: 19.8437rem;
+}
 .contacts__section-text{
   display: flex;
   flex-direction: column;
@@ -444,6 +461,9 @@ color: #FFFFFF;
 }
 .link--contacts_phone{
   margin-bottom: 0.5104rem;
+}
+.service_phone-numbers{
+  display: flex;
 }
 
 /* Футер */
@@ -667,6 +687,13 @@ margin-top: 2.4479rem;
   letter-spacing: -0.026rem;
   color: #373737;
 }
+.text--contacts_phone{
+  font-weight: 300;
+  font-size: 0.9375rem;
+  line-height: 1.3541rem;
+  letter-spacing: -0.026rem;
+  color: #373737;
+}
 .text--service{
 font-size: 0.8333rem;
 line-height: 1.3541rem;
@@ -784,7 +811,7 @@ p{
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #002D59;
+  background-color: #095790;
   border-color: #002D59;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {

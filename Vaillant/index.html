@@ -5,11 +5,540 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Vaillant</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
-<body>
-  <h1>Vaillant</h1>
 
+<body>
+  <header class="header">
+    <div class="header__section header__section-top">
+      <div class="container--main">
+        <div class="header__top">
+          <div class="header__top__section header__top__section-email">
+            <div class="header__top__email">
+              <img class="icon icon--email" src="../Vaillant/img/icons/email_icon.svg" alt="email_icon" />
+              <a class="link link--email" href="mailto:info@pik-samara.ru">info@pik-samara.ru</a>
+            </div>
+          </div>
+          <div class="header__top__section header__top__section-phone">
+            <div class="header__top__phone">
+              <img class="icon icon--phone" src="../Vaillant/img/icons/phone_icon.svg" alt="phone_icon" />
+              <a class="link link--phone" href="tel:78469504729">+7 (846) 950-47-29</a>
+              <a class="link link--phone" href="tel:78469268229">+7 (846) 926-82-29</a>
+            </div>
+          </div>
+          <div class="header__top__section header__top__section-adress">
+            <div class="header__top__adress">
+              <img class="icon icon--adress" src="../Vaillant/img/icons/adress_icon.svg" alt="adress_icon" />
+              443112, г. Самара, Волжское шоссе, д. 7
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__section header__section-nav">
+      <div class="container--main">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <span class="text text--logo">Инженерный центр</span>
+            <img class="icon icon--vaillant" src="./img/icons/logo_icon.svg" alt="vaillant_icon" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Преимущества</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Комплекты «Vaillant»</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Акция</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Станции «Юнилос»</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="main__section main__section-slider">
+      <div class="slider">
+        <div class="slider__section slider__section__text">
+          <p class="section__text section__text__header">Инженерный центр
+            «Buderus»</p>
+          <p class="section__text text--body">Это структура, созданная на базе первой инженерной компании. Наша
+            задача - грамотное проектирование, поставка, монтаж, сервисное обслуживание оборудования «Buderus»</p>
+        </div>
+        <div class="slider__section slider__section__gray-area">
+          <div class="gray-area__section gray-area__section__block">
+            <p class="section__block section__block__white-text section__block__advantages">Преимущества покупки
+              оборудования комплектом</p>
+          </div>
+          <div class="gray-area__section gray-area__section__block">
+            <p class="section__block section__block__white-text section__block__service">Сервисный центр Buderus</p>
+            <div class="section__block section__block__website__container"><a
+                class="website__container website__container__website" href="">Открыть сайт</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__section main__section-advantages">
+      <div class="container--main">
+        <div class="advantages">
+          <div class="advantages__section advantages__section-header">
+            <div class="advantages__header">
+              <p class="text text-blue_header">наши преимущества</p>
+            </div>
+          </div>
+          <div class="advantages__section advantages__section-body">
+            <div class="advantages__body">
+              <div class="advantages__body__section-item">
+                <div class="body__item body__item__wrench">
+                  <img class="img img--wrench" src="../Buderus/img/icons/wrench_icon.svg" alt="">
+                  <p class="text text--icon_title">опыт</p>
+                  <p class="text text--icon_paragraph">Квалифицированный подбор, проектирование и монтаж оборудования
+                    Buderus.</p>
+                </div>
+              </div>
+              <div class="advantages__body__section-item">
+                <div class="body__item body__item__badge">
+                  <img class="img img--badge" src="../Buderus/img/icons/badge_icon.svg" alt="">
+                  <p class="text text--icon_title">гарантия</p>
+                  <p class="text text--icon_paragraph">Гарантийное, сервисное обслуживание поставленного оборудования, и
+                    поставки непосредственно от производителя</p>
+                </div>
+              </div>
+              <div class="advantages__body__section-item">
+                <div class="body__item body__item__money">
+                  <img class="img img--money" src="../Buderus/img/icons/money_icon.svg" alt="">
+                  <p class="text text--icon_title">цена</p>
+                  <p class="text text--icon_paragraph">Выгодная цена на комплекты оборудования Buderus и на
+                    дополнительное
+                    оборудование других брендов</p>
+                </div>
+              </div>
+              <div class="advantages__body__section-item">
+                <div class="body__item body__item__feature">
+                  <img class="img img--feature" src="../Buderus/img/icons/advantages__feature.svg" alt="">
+                  <p class="text text--icon_title">сертификаты</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__section main__section-specs">
+      <div class="container--main">
+        <div class="specs">
+          <div class="specs__section specs__section-header">
+            <div class="specs__header">
+              <p class="text text--header">Cпецифика предлагаемого оборудования</p>
+            </div>
+          </div>
+          <div class="specs__section specs__section-body">
+            <div class="section__body section__body-img">
+              <div class="body__img">
+                <img class="img img--specs__pic" src="../Buderus/img/pic/specs_pic.png" alt="">
+              </div>
+            </div>
+            <div class="section__body section__body-description">
+              <div class="body__description body__description-block">
+                <p class="text text--title">Комплекты</p>
+                <p class="text text--paragraph">Полная комплектация котельной, оборудования объекта, необходимого
+                  Заказчику. Как следствие более выгодная цена. Это позволяет окончательно упростить задачу, связанную с
+                  поиском более выгодных предложений </p>
+              </div>
+              <div class="body__description body__description-block">
+                <p class="text text--title">Инновационная техника</p>
+                <p class="text text--paragraph">Солнечные гелиосистемы, конденсатная техника реализуется в 95 % случаях
+                  через более подготовленные, технически грамотные «Инженерные центры «Buderus»</p>
+              </div>
+              <div class="body__description body__description-block">
+                <p class="text text--title">Дополнительное оборудование</p>
+                <p class="text text--paragraph">Мы сотрудничаем с такими компаниями как <span
+                    class="text text--bold">HENKO, SANHA, WILO, GRUNDFOS,
+                    BUGATTI, REFLEX</span> приобретаемое через «Инженерный центр» так же имеет отличительную ценовую
+                  специфику.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__section main__section-kits">
+      <div class="container--main">
+        <div class="kits">
+          <div class="kits__section kits__section-header">
+            <div class="kits__header">
+              <p class="text text--header-blue">Комплекты</p>
+            </div>
+          </div>
+          <div class="kits__section kits__section-paragraph">
+            <div class="kits__paragraph">
+              <p class="text text--paragraph">Подберите необходимый вам комплект полной комплектации котельной. Для
+                этого последовательно выберите сначала необходимый котел, а затем бойлер. Подробную информация о
+                характеристиках любого оборудования вы сможете найти, кликнув на кнопку <img class="icon icon--i"
+                  src="../Buderus/img/icons/i-icon.svg" alt=""> рядом с
+                названием товара. </p>
+            </div>
+          </div>
+          <div class="kits__section kits__section-body">
+            <div class="kits__body kits__tabs">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary">C настенными традиционными котлами</button>
+                <button type="button" class="btn btn-secondary">С настенными конденсаторными котлами</button>
+              </div>
+            </div>
+            <div class="kits__body kits__checkout">
+              <div class="checkout checkout__slider">
+                <img class="img img--slider" src="../Buderus/img/pic/kits_slider.png" alt="">
+              </div>
+              <div class="checkout checkout__switch">
+              </div>
+              <div class="checkout checkout__selector">
+                <div class="selector selector__dropdown">
+                  <div class="form-group">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Выберите котел</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="selector selector__dropdown">
+                  <div class="form-group">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Выберите бойлер</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="selector selector__option">
+                  <p class="text text--option">Горизонтальный проход через стену</p>
+                  <a class="link link--option" href=""><img class="icon icon--i"
+                      src="../Buderus/img/icons/option-icon.svg" alt=""></a>
+                </div>
+                <div class="selector selector__option">
+                  <p class="text text--option">Группа безопасности водонагревателя</p>
+                  <a class="link link--option" href=""><img class="icon icon--i"
+                      src="../Buderus/img/icons/option-icon.svg" alt=""></a>
+                </div>
+                <div class="selector selector__price">
+                  <p class="text text--price">От 120 000 рублей</p>
+                </div>
+                <div class="selector selector__send">
+                  <button type="button" class="btn btn-primary">Отправить заявку</button>
+                </div>
+                <div class="selector selector__note">
+                  <p class="text text--note">* Указанная цена не является публичной офертой, действует при заключении
+                    договора на монтаж</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__section main__section-stock">
+      <div class="container--main">
+        <div class="stock">
+          <div class="stock__section stock__section-header">
+            <div class="stock__header">
+              <p class="text text--header-blue">Акция</p>
+            </div>
+          </div>
+          <div class="stock__section stock__section-body">
+            <div class="stock__body stock__body__paragraph">
+              <p class="text text--stock">Цены на комплекты с настенными конденсатными котлами и системами биологической
+                очистки сточных вод «Волгарь»<br>(Для коттеджей от 200 до 500 м/кв)</p>
+            </div>
+          </div>
+          <div class="stock__section stock__section-event">
+            <div class="stock__event">
+              <div class="event__item">
+                <div class="event__item__img"><img class="img img--stock" src="../Buderus/img/pic/stock_pic.png" alt="">
+                </div>
+                <div class="event__item__description">
+                  <p class="text text--name">Комлект 1</p>
+                  <p class="text text--old_price">84 505 руб.</p>
+                  <p class="text text--new_price">944 180 руб.</p>
+                </div>
+              </div>
+              <div class="event-item">
+                <div class="event__item__img"><img class="img img--stock" src="../Buderus/img/pic/stock_pic.png" alt="">
+                </div>
+                <div class="event__item__description">
+                  <p class="text text--name">Комлект 1</p>
+                  <p class="text text--old_price">84 505 руб.</p>
+                  <p class="text text--new_price">944 180 руб.</p>
+                </div>
+              </div>
+              <div class="event-item">
+                <div class="event__item__img"><img class="img img--stock" src="../Buderus/img/pic/stock_pic.png" alt="">
+                </div>
+                <div class="event__item__description">
+                  <p class="text text--name">Комлект 1</p>
+                  <p class="text text--old_price">84 505 руб.</p>
+                  <p class="text text--new_price">944 180 руб.</p>
+                </div>
+              </div>
+              <div class="event-item">
+                <div class="event__item__img"><img class="img img--stock" src="../Buderus/img/pic/stock_pic.png" alt="">
+                </div>
+                <div class="event__item__description">
+                  <p class="text text--name">Комлект 1</p>
+                  <p class="text text--old_price">84 505 руб.</p>
+                  <p class="text text--new_price">944 180 руб.</p>
+                </div>
+              </div>
+              <div class="event-item">
+                <div class="event__item__img"><img class="img img--stock" src="../Buderus/img/pic/stock_pic.png" alt="">
+                </div>
+                <div class="event__item__description">
+                  <p class="text text--name">Комлект 1</p>
+                  <p class="text text--old_price">84 505 руб.</p>
+                  <p class="text text--new_price">944 180 руб.</p>
+                </div>
+              </div>
+              <div class="event-item">
+                <div class="event__item__img"><img class="img img--stock" src="../Buderus/img/pic/stock_pic.png" alt="">
+                </div>
+                <div class="event__item__description">
+                  <p class="text text--name">Комлект 1</p>
+                  <p class="text text--old_price">84 505 руб.</p>
+                  <p class="text text--new_price">944 180 руб.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stock__section stock__section-note">
+            <p class="text text--big_note">Указанная цена не является публичной офертой, действует при заключении
+              договора на монтаж</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__section main__section-feedback">
+      <div class="container--main">
+        <div class="feedback">
+          <div class="feedback__section feedback__section-header">
+            <div class="feedback__header">
+              <p class="text text--feedback">Не нашли подходящий для Вас комплект?</p>
+            </div>
+          </div>
+          <div class="feedback__section feedback__section-description">
+            <div class="feedback__desciption">
+              <p class="text text--fill">Заполните форму обратной связи и/или пришлите для расчета свой комплект</p>
+              <p class="text text--condition">*Комплект должен состоять из 4 единиц оборудования Buderus. Предложенная
+                цена будет действительна, только при заключении договора на монтаж данного оборудования</p>
+            </div>
+          </div>
+          <div class="feedback__section feedback__section-form">
+            <form class="form-inline">
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail3">Почта</label>
+                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="formGroupExampleInput">Фио</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example 111input">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="formGroupExampleInput">Комплект, комментарий</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+              </div>
+              <button type="submit" class="btn btn--form">Отправить</button>
+            </form>
+          </div>
+          <div class="feedback__section feedback__section-policy">
+            <div class="feedback__policy">
+              <p class="text text--policy">Нажимая кнопку «Отправить», я соглащаюсь с </p>&#160
+              <a class="link link--policy" href="">политикой обработки персональных данных</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main__section main__section-info">
+      <div class="container--main">
+        <div class="info">
+          <p class="text text--info_header">Автономная система очистки сточных вод «Волгарь» незаменима там, где
+            невозможно подключиться к центральной канализационной сети</p>
+          <p class="text text--info_body">ООО «Первая Инженерная Компания реализует со своего склада в г. Самара
+            локальные очистные сооружения канализации модельного ряда Волгарь. Уникальное оборудование для очистки
+            сточных вод базируется на лучших решениях и достижениях в области автономного водоотведения и очистки стоков
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="main__section main__section-product">
+      <div class="container--main">
+        <div class="product">
+          <div class="product__section product__section-header">
+            <div class="product__header">
+              <p class="text text--header">Станции биологической очистки «Волгарь»</p>
+            </div>
+            <div class="product__section product__section-event">
+              <div class="product__event">
+                <div class="event__item">
+                  <div class="event__item__img"><img class="img img--product" src="../Buderus/img/pic/product_pic.png"
+                      alt="">
+                  </div>
+                  <div class="event__item__product-description">
+                    <p class="text text--product_name">Комлект 1</p>
+                    <p class="text text--product_price">944 180 руб.</p>
+                  </div>
+                </div>
+                <div class="event-item">
+                  <div class="event__item__img"><img class="img img--product" src="../Buderus/img/pic/product_pic.png"
+                      alt="">
+                  </div>
+                  <div class="event__item__product-description">
+                    <p class="text text--product_name">Комлект 1</p>
+                    <p class="text text--product_price">944 180 руб.</p>
+                  </div>
+                </div>
+                <div class="event-item">
+                  <div class="event__item__img"><img class="img img--product" src="../Buderus/img/pic/product_pic.png"
+                      alt="">
+                  </div>
+                  <div class="event__item__product-description">
+                    <p class="text text--product_name">Комлект 1</p>
+                    <p class="text text--product_price">944 180 руб.</p>
+                  </div>
+                </div>
+                <div class="event-item">
+                  <div class="event__item__img"><img class="img img--product" src="../Buderus/img/pic/product_pic.png"
+                      alt="">
+                  </div>
+                  <div class="event__item__product-description">
+                    <p class="text text--product_name">Комлект 1</p>
+                    <p class="text text--product_price">944 180 руб.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__section product__section-note">
+              <p class="text text--big_note">Указанная цена не является публичной офертой, действует при заключении
+                договора на монтаж</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="main__section main__section-contacts">
+      <div class="container--main">
+        <div class="contacts">
+          <div class="contacts__section contacts__section-map">
+            <div class="section__map contacts__map">
+              <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7d8d1f72a512dc61d1560c5d18e38d5fe4e9140afc3172721d3313bbd8822651&amp;width=587&amp;height=381&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+          </div>
+          <div class="contacts__section contacts__section-text">
+            <div class="contacts__text contacts__header">
+              <p class="text text--contacts">Наши контакты</p>
+            </div>
+            <div class="contacts__text contacts__block">
+              <img class="icon icon--black" src="../Buderus/img/icons/email-black_icon.svg" alt="email_icon" />
+              <a class="link link--contacts" href="mailto:info@pik-samara.ru">info@pik-samara.ru</a>
+            </div>
+            <div class="contacts__text contacts__block">
+              <img class="icon icon--black" src="../Buderus/img/icons/phone-black_icon.svg" alt="phone_icon" />
+              <div class="contacts__phone contacts__phone-numbers">
+                <a class="link link--contacts link--contacts_phone" href="tel:78469504729">+7 (846) 950-47-29</a>
+                <a class="link link--contacts link--contacts_phone" href="tel:78469268229">+7 (846) 926-82-29</a>
+                <div class="service_phone-numbers"><a
+                  class="link link--contacts link--contacts_phone" href="tel:78462770164">+7 (846)
+                  277-01-64 </a>&#160;<p class="text text--contacts_phone">(телефон сервисной службы)</p>
+              </div>
+                <p class="text text--service">Телефон сервисной службы работает 24/7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__section footer__section-nav">
+      <div class="container--main">
+        <div class="footer__nav">
+          <div class="nav__panel">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand navbar-brand_footer" href="#">
+                <span class="text text--logo">Инженерный центр</span>
+                <img class="icon icon--buderus" src="./img/icons/logo_icon.svg" alt="buderus_icon" />
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navbar-collapse_footer" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item nav-item_footer">
+                    <a class="nav-link nav-link_footer" href="#">Специфика</a>
+                  </li>
+                  <li class="nav-item nav-item_footer">
+                    <a class="nav-link nav-link_footer" href="#">Комплекты «Buderus»</a>
+                  </li>
+                  <li class="nav-item nav-item_footer">
+                    <a class="nav-link nav-link_footer" href="#">Акция</a>
+                  </li>
+                  <li class="nav-item nav-item_footer">
+                    <a class="nav-link nav-link_footer" href="#">Станции «Волгарь»</a>
+                  </li>
+                  <li class="nav-item nav-item_footer">
+                    <a class="nav-link nav-link_footer" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          <div class="nav__copyright">
+            <p class="text text--copyright">©2019 - Design by Utenyshev</p>
+            <a class="link link--copyright" href="">Политика конфеденциальности</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__section footer__section-bottom">
+      <div class="container--main">
+        <div class="footer__bottom">
+          <p class="text text--offer">Все указанные на сайте цены не являются публичной офертой</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- скрипты -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
 </body>
+
 </html>
