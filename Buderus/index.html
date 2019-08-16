@@ -202,8 +202,9 @@
           <div class="kits__section kits__section-body">
             <div class="kits__body kits__tabs">
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-secondary">C настенными традиционными котлами</button>
-                <button type="button" class="btn btn-secondary">С настенными конденсаторными котлами</button>
+                <button type="button" class="btn btn-secondary">С настенными традиционными котлами</button>
+                <button type="button" class="btn btn-secondary">С напольными традиционными котлами</button>
+                <button type="button" class="btn btn-secondary btn-secondary-last">С настенными конденсатными котлами</button>
               </div>
             </div>
             <div class="kits__body kits__checkout">
@@ -356,21 +357,23 @@
             </div>
           </div>
           <div class="feedback__section feedback__section-form">
-            <form class="form-inline">
-              <div class="form-group">
-                <label class="sr-only" for="exampleInputEmail3">Почта</label>
-                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Enter email">
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="formGroupExampleInput">Фио</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example 111input">
-              </div>
-              <div class="form-group">
-                <label class="sr-only" for="formGroupExampleInput">Комплект, комментарий</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-              </div>
-              <button type="submit" class="btn btn--form">Отправить</button>
-            </form>
+              <form class="form-inline">
+                <div class="form-group form-group_input">
+                  <label class="sr-only" for="exampleInputEmail3">Почта</label>
+                  <input type="email" class="form-control form-control-email" id="exampleInputEmail3" placeholder="Почта">
+                </div>
+                <div class="form-group form-group_input">
+                  <label class="sr-only" for="formGroupExampleInput">Фио</label>
+                  <input type="text" class="form-control form-control-form" id="formGroupExampleInput" placeholder="ФИО">
+                </div>
+                <div class="form-group form-group_input">
+                  <label class="sr-only" for="formGroupExampleInput">Комплект, комментарий</label>
+                  <input type="text" class="form-control form-control-form" id="formGroupExampleInput" placeholder="Комплект, комментарий">
+                </div>
+                
+                <div class="form__send-container"><a class="link link--form" href="">Отправить</a>
+                </div>
+              </form>
           </div>
           <div class="feedback__section feedback__section-policy">
             <div class="feedback__policy">
