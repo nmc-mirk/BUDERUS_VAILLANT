@@ -1,176 +1,286 @@
 /* Шрифты */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap");
 
 /* normalize */
-*{
-	padding: unset;
+* {
+  padding: unset;
   margin: unset;
   border: unset;
   outline: unset;
   font-weight: 400;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1vw;
-  color: #3C3C3B;
+  color: #3c3c3b;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: unset;
   font-weight: unset;
 }
-html, body { height: 100%; }
-body { background-color: #ffffff; }
-ul, ol, li, a, p, span, strong, i, em, div, section {
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #ffffff;
+}
+ul,
+ol,
+li,
+a,
+p,
+span,
+strong,
+i,
+em,
+div,
+section {
   font-size: inherit;
   font-weight: inherit;
-  color:inherit;
+  color: inherit;
   margin: unset;
 }
-img { display: block; }
-a { text-decoration: none; }
-strong, b { font-weight: 600; }
-i, em { font-style: italic; }
-ul, ol, li, button, span { display: block; }
-button, a { cursor: pointer; }
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #9dafbd;
+  text-decoration: unset;
+}
+strong,
+b {
+  font-weight: 600;
+}
+i,
+em {
+  font-style: italic;
+}
+ul,
+ol,
+li,
+button,
+span {
+  display: block;
+}
+button,
+a {
+  cursor: pointer;
+}
 
 /* Хэдер */
-.header{
-  background-color: #3C3C3B;
+.header {
+  background-color: #3c3c3b;
   width: 100%;
 }
 
-.header__section-top{
-  border-bottom: 1px solid #4C4C4C;
+.header__section-top {
+  border-bottom: 1px solid #4c4c4c;
 }
 
-.header__top{
+.header__top {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 2.34375rem;
-  color: #C8C8C8;
-  font-size: .7291rem;
-  line-height: .8333rem;
+  color: #c8c8c8;
+  font-size: 0.7291rem;
+  line-height: 0.8333rem;
 }
 
-.header__top__section{
+.header__top__section {
   margin-right: 2.9687rem;
 }
 
-.header__top__section-adress{
+.header__top__section-adress {
   margin-right: unset;
 }
 
 .header__top__adress,
 .header__top__phone,
-.header__top__email{
+.header__top__email {
   display: flex;
   align-items: center;
 }
 
-.header__top__phone .link::after{
-  content: ',\a0';
+.header__top__phone .link::after {
+  content: ",\a0";
 }
 
-.header__top__phone .link:last-child:after{
+.header__top__phone .link:last-child:after {
   content: unset;
 }
 
+/* Слайдер1 */
 
-/* Преимущества */
-.main__section-advantages{
-  background-color: #002D59;
+.slider {
+  display: flex;
 }
 
-.advantages{
+.slider__section-text {
+  padding: 7.9166rem 0 10.8333rem;
+}
+
+.owl-carousel--main {
+  width: 49.375rem;
+  height: 32.5rem;
+}
+
+.slider__section-slider {
+  position: relative;
+  right: -9rem;
+}
+
+.slider__section-tables {
+  position: absolute;
+}
+
+.slider .owl-nav {
+  position: absolute;
+  left: -30.5rem;
+  bottom: 2.6562rem;
+}
+
+.owl-prev span,
+.owl-next span {
+  font-size: 1.5rem;
+  height: 2.0833rem;
+  width: 2.0833rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.25rem;
+  box-sizing: border-box;
+}
+
+.owl-prev span {
+  color: #9dafbd;
+  background-color: #ededed;
+}
+
+.owl-next span {
+  color: #ffffff;
+  background-color: #002d59;
+}
+
+/* Преимущества */
+.main__section-advantages {
+  background-color: #002d59;
+}
+
+.advantages {
   padding: 1.5625rem 0 2.0833rem;
 }
 
-.advantages__section-title{
+.advantages__section-title {
   text-align: center;
   padding: 0 0 2.0833rem;
 }
 
-.advantages__section-items{
+.advantages__section-items {
   display: flex;
   justify-content: space-between;
 }
 
-.advantages__item{
+.advantages__item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.advantages__item__section-icon{
+.advantages__item__section-icon {
   padding-bottom: 1.0416rem;
 }
 
-.advantages__item__section-description{
+.advantages__item__section-description {
   color: #ffffff;
   font-size: 0.7291rem;
   text-align: center;
   max-width: 13.2812rem;
 }
 
-.advantages__item__section-title{
+.advantages__item__section-title {
   padding-bottom: 0.3645rem;
 }
 
 /* Специфика предлагаемого оборудования */
-.specs{
+.specs {
   display: flex;
   flex-wrap: wrap;
   padding: 1.5625rem 0 2.0833rem;
   justify-content: space-between;
-  align-items: center;   
-}
-.specs__section-slider{
-
-}
-.specs__section-description{
-  width: 25.7812rem
+  align-items: center;
 }
 
-.specs__section-title{
+.specs__section-description {
+  width: 25.7812rem;
+}
+
+.specs__section-title {
   padding: 0 0 2.0833rem;
 }
 
-/* Комплекты */
-
-.main__section-kits{
-  background-color: #F9F9F9;
+.owl-carousel--spec {
+  width: 30.625rem;
+  height: 24.0104rem;
 }
 
-.kits{
+.specs .owl-dots {
+  position: absolute;
+  width: 100%;
+  bottom: 1rem;
+}
+
+.specs .owl-dot span {
+  background: #9dafbd !important;
+}
+
+.specs .owl-dot.active span {
+  background: #002d59 !important;
+}
+
+/* Комплекты */
+.main__section-kits {
+  background-color: #f9f9f9;
+}
+
+.kits {
   padding: 1.5625rem 0 2.0833rem;
 }
 
-.kits__section-title{
-  padding: 0 0 1.3020rem 0;
+.kits__section-title {
+  padding: 0 0 1.302rem 0;
 }
 
 /* Акция */
 
-.stock{
+.stock {
   padding: 1.5625rem 0 2.0833rem;
 }
 
-.stock__section-title{
-  padding: 0 0 1.3020rem;
+.stock__section-title {
+  padding: 0 0 1.302rem;
 }
 
-.stock__section-description{
+.stock__section-description {
   padding: 0 0 1.5625rem 0;
 }
 
-.stock__section-items{
+.stock__section-items {
   display: flex;
   justify-content: space-between;
   padding: 0 0 2.6041rem 0;
 }
 
-.stock__item{
+.stock__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,86 +288,87 @@ button, a { cursor: pointer; }
   box-sizing: border-box;
 }
 
-.stock__item:hover{
+.stock__item:hover {
   box-shadow: 0 0 1.0416rem rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  color: unset;
 }
 
-.stock__item__description{
+.stock__item__description {
   padding: 0.7812rem;
-  background-color: #EFF0F1;
+  background-color: #eff0f1;
 }
 
-.stock__item__description__old-price{
+.stock__item__description__old-price {
   text-decoration-line: line-through;
   font-size: 0.7291rem;
   padding: 0 0 0.5208rem 0;
   line-height: 0.8333rem;
 }
 
-.stock__item__description__old-price:after{
-  content: ' руб.'
+.stock__item__description__old-price:after {
+  content: " руб.";
 }
 
-.stock__item__description__price{
+.stock__item__description__price {
   font-size: 0.9375rem;
   line-height: 1.0937rem;
-  color: #002D59;
+  color: #002d59;
 }
-.stock__item__description__price::after{
-  content: ' руб.'
+.stock__item__description__price::after {
+  content: " руб.";
 }
 
 /* Не нашли подходящий для вас комплект? */
 
-.main__section-feedback{
-  background-color: #002D59;
+.main__section-feedback {
+  background-color: #002d59;
 }
 
-.feedback{
+.feedback {
   padding: 1.5625rem 0 2.0833rem;
 }
 
-.feedback__section-title{
-  padding: 0 0 1.3020rem;
+.feedback__section-title {
+  padding: 0 0 1.302rem;
   text-align: center;
 }
 
-.feedback__section-description{
+.feedback__section-description {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 0 0 1.5625rem 0;
 }
 
-.feedback__section-policy{
+.feedback__section-policy {
   display: flex;
   justify-content: center;
 }
 
-.feedback__form{
+.feedback__form {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 1.5625rem 0 ;
+  padding: 0 0 1.5625rem 0;
 }
 
 /* Инфо */
 
-.info{
+.info {
   padding: 2.6041rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.info__item{
+.info__item {
   width: 28.28125rem;
   font-size: 0.9375rem;
   line-height: 1.4583rem;
 }
 
-.info__item--big{
-  color: #002D59;
+.info__item--big {
+  color: #002d59;
   font-size: 1.5104rem;
   line-height: 2.3958rem;
   font-weight: 300;
@@ -265,40 +376,88 @@ button, a { cursor: pointer; }
 }
 
 /* Станции биологической очистки волгарь */
-.main__section-product{
-  background-color: #F9F9F9;
+.main__section-product {
+  background-color: #f9f9f9;
 }
 
-.product{
+.product {
   padding: 1.5625rem 0 2.0833rem;
 }
 
-.product__section-title{
-  padding: 0 0 1.3020rem;
+.product__section-title {
+  padding: 0 0 1.302rem;
 }
+.product__section-slider {
+  padding: 0 0 1.5625rem;
+}
+
+.product__slider__image{
+  width: 13.75rem;
+  height: 16.3541rem;
+}
+
+.product__slider__title{
+  padding: 0 0 0.78125rem 0;
+  font-size: 0.9375rem;
+  line-height: 1.09375rem;
+  text-transform: uppercase;
+}
+
+.product__slider__description{
+  padding: 0.8854rem 0.78125rem;
+  background-color: #EFF0F1;
+}
+
+.product__slider__price{
+  color: #002D59;
+  font-size: 1.25rem;
+}
+.product__slider__price::after{
+content: ' руб.'
+}
+
+.owl__item--product{
+  display: block;
+}
+
+.owl__item--product:hover{
+  box-shadow: 0px 0px 1.0416rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: unset;
+}
+
+.product .owl-nav{
+  position: absolute;
+  width: 110.2%;
+  left: -3rem;
+  display: flex;
+  justify-content: space-between;
+  bottom: 10rem;
+}
+
 
 /* Контакты */
 
-.contacts{
+.contacts {
   padding: 3.125rem 0;
   display: flex;
 }
 
-.contacts__section-map{
+.contacts__section-map {
   width: 30.5729rem;
   height: 19.8437rem;
   padding: 0 3.125rem 0 0;
 }
 
-.contacts__content__item{
+.contacts__content__item {
   display: flex;
 }
 
-.contacts__content__item--email{
+.contacts__content__item--email {
   padding: 0 0 1.5625rem 0;
 }
 
-.contacts__content__item__links{
+.contacts__content__item__links {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -306,174 +465,185 @@ button, a { cursor: pointer; }
 }
 
 /* Футер */
-.footer{
-  background-color: #3C3C3B;
+.footer {
+  background-color: #3c3c3b;
 }
 
-.navbar--footer{
-  justify-content: flex-end;
-}
-
-.footer__section-bottom{
-  background-color: #3C3C3B;
-  border-top: 0.0520rem solid #4C4C4C;
-}
-
-.footer__nav{
-  padding: 2.3437rem 0;
-}
-
-.footer__policy{
-  color: #FFFFFF;
-  font-size: 0.7291rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 2rem 0 0 0;
+.footer__section-bottom {
+  background-color: #3c3c3b;
+  border-top: 0.052rem solid #4c4c4c;
 }
 
 /* оставить внизу + все идентичное сюда же */
 .container--main {
-  max-width: 1140px; 
+  max-width: 1140px;
   margin: 0 auto;
   position: relative;
 }
 
+/* Картинки */
+
+.img--stock-item {
+  width: 8.6458rem;
+  height: 9.1666rem;
+}
+
 /* Иконки */
-.icon{
-  height: .8333rem;
-  width: .8333rem;
-  
+.icon {
+  height: 0.8333rem;
+  width: 0.8333rem;
 }
 
-.icon--adress{
-width: .625rem;
-margin-right: .625rem;
+.icon--adress {
+  width: 0.625rem;
+  margin-right: 0.625rem;
 }
 
-.icon--phone{
-margin-right: .625rem;
+.icon--phone {
+  margin-right: 0.625rem;
 }
 
-.icon--email{
-margin-right: .625rem;
+.icon--email {
+  margin-right: 0.625rem;
 }
 
-.icon--buderus{
+.icon--buderus {
   height: 1.1979rem;
   width: auto;
 }
 
-.icon--experience{
+.icon--experience {
   height: 2.9687rem;
   width: 2.9687rem;
 }
 
-.icon--garantee{
+.icon--garantee {
   height: 3.4895rem;
   width: 3.4895rem;
 }
 
-.icon--price{
+.icon--price {
   height: 3.0729rem;
   width: 3.0729rem;
 }
 
-.icon--sertificates{
+.icon--sertificates {
   height: 7.0833rem;
   width: 5.1562rem;
 }
 
-.icon-inText{
+.icon-inText {
   display: inline;
 }
 
 .icon--contacts-email,
-.icon--contacts-phone{
-  margin: .2rem 0.6770rem 0 0;
+.icon--contacts-phone {
+  margin: 0.2rem 0.677rem 0 0;
   height: 1.0416rem;
   width: 1.0416rem;
 }
 
 /* Заголовки */
 
-h1,h2{
+h1,
+h2 {
   font-size: 2.0833rem;
   font-weight: 300;
   line-height: 2.4479rem;
-  letter-spacing: -0.0520rem;
+  letter-spacing: -0.052rem;
 }
 
-h3{
+h3 {
   font-size: 1.0416rem;
   line-height: 1.3541rem;
-  letter-spacing: -0.0260rem;
+  letter-spacing: -0.026rem;
 }
 
-h4{
+h4 {
   font-size: 0.8333rem;
   line-height: 0.9895rem;
 }
 
-.title{
+.title {
   color: #ffffff;
+}
+
+.title--main {
+  color: #373737;
+  width: 17.9166rem;
+  line-height: 2.4479rem;
+  padding: 0 0 1.302rem 0;
 }
 
 .title--specs,
 .title--kits,
 .title--stock,
 .title--product,
-.title--contacts{
-  color: #3C3C3B;
+.title--contacts {
+  color: #3c3c3b;
 }
 
-.title--specs-description{
-  color: #002D59;
+.title--specs-description {
+  color: #002d59;
   line-height: 1.6145rem;
   font-weight: 600;
   padding-bottom: 0.2604rem;
 }
 
-.title--stock-item{
-  color: #3C3C3B;
+.title--stock-item {
+  color: #3c3c3b;
   padding-bottom: 2.5rem;
 }
 
-.title--contacts{
+.title--contacts {
   padding: 0 0 2.0833rem 0;
 }
 
 /* Текст */
-.text--bold{
+.text--bold {
   font-weight: 600;
 }
 
-.text--logo{
-  font-size: .6770rem;
-  letter-spacing: -.0156rem;
-  line-height: .7812rem;
-  padding-bottom: .5rem;
+.text--slider-main {
+  width: 21.5104rem;
+  font-size: 0.9375rem;
+  line-height: 1.3541rem;
+  letter-spacing: -0.026rem;
 }
-.text--specs-description{
-  padding: 0 0 1.3020rem  0;
+
+.text--logo {
+  font-size: 0.677rem;
+  letter-spacing: -0.0156rem;
+  line-height: 0.7812rem;
+  padding-bottom: 0.5rem;
+}
+.text--specs-description {
+  padding: 0 0 1.302rem 0;
   font-size: 0.8333rem;
   line-height: 1.25rem;
 }
 
 .text--kits-description,
-.text--stock-description{
+.text--stock-description {
   font-size: 0.8333rem;
   line-height: 1.25rem;
 }
 
-.text--stock-text{
-  color: #B4B4B4;
+.text--stock-text {
+  color: #b4b4b4;
   font-size: 0.8333rem;
   line-height: 1.3541rem;
   text-align: center;
 }
 
-.text--feedback-description-big{
+.text--product{
+  font-size: 0.8333rem;
+  line-height: 1.3541rem;
+  text-align: center;
+  color: #B4B4B4;
+}
+
+.text--feedback-description-big {
   font-size: 0.9375rem;
   color: #ffffff;
   line-height: 1.3541rem;
@@ -482,7 +652,7 @@ h4{
 }
 
 .text--feedback-description,
-.text--feedback-policy{
+.text--feedback-policy {
   font-size: 0.72916rem;
   color: #ffffff;
   line-height: 1.0416rem;
@@ -490,15 +660,15 @@ h4{
   max-width: 33.6458rem;
 }
 
-.text--contacts{
+.text--contacts {
   padding: 0 0 0 1.7187rem;
-  color: #9DAFBD;
+  color: #9dafbd;
   font-size: 0.8333rem;
   line-height: 1.3541rem;
 }
 
-.text--footer-bottom{
-  color: #B4B4B4;
+.text--footer-bottom {
+  color: #b4b4b4;
   font-size: 0.7291rem;
   line-height: 1.3541rem;
   padding: 0.625rem;
@@ -507,59 +677,59 @@ h4{
 
 /* Ссылки */
 
-.link--feedback-policy{
+.link--feedback-policy {
   text-decoration: underline;
 }
 
-.link--contacts-phone{
+.link--contacts-phone {
   padding: 0 0 0.5208rem 0;
   font-size: 0.9375rem;
   line-height: 1.3541rem;
   color: #373737;
 }
-.link--contacts-email{
+.link--contacts-email {
   font-size: 0.9375rem;
   line-height: 1.3541rem;
   color: #373737;
 }
-.link--contacts-phone:nth-child(3)::after{
-  content: ' (телефон сервисной службы)'
+.link--contacts-phone:nth-child(3)::after {
+  content: " (телефон сервисной службы)";
 }
 
-.link--policy{
+.link--policy {
   font-size: 0.625rem;
-  color: #B4B4B4;
+  color: #b4b4b4;
   text-decoration: underline;
 }
 
 /* Инпуты */
 
-.input{
+.input {
   padding: 1.0416rem 0.7812rem;
   box-sizing: border-box;
   font-size: 0.7291rem;
-  border: 0.0520rem solid #D1DBE3;
+  border: 0.052rem solid #d1dbe3;
   line-height: 0.8333rem;
   height: 3.125rem;
 }
 
-.input::placeholder{
-  color: #9DAFBD;   
+.input::placeholder {
+  color: #9dafbd;
 }
 
-.input--mail{
+.input--mail {
   width: 17.1875rem;
 }
-.input--name{
+.input--name {
   width: 13.6979rem;
 }
-.input--message{
+.input--message {
   width: 13.6458rem;
 }
 
 /* Кнопки */
 
-.button{
+.button {
   padding: 1.0416rem 3.0208rem;
   font-size: 0.8333rem;
   line-height: 0.9895rem;
@@ -569,47 +739,9 @@ h4{
   cursor: pointer;
 }
 
-.button--form{
-  background-color: #002D59;
-  border: 0.0520rem solid #ffffff;
+.button--form {
+  background-color: #002d59;
+  border: 0.052rem solid #ffffff;
   color: #ffffff;
   font-weight: bold;
-}
-
-/* BOOTSTRAP */
-
-.navbar{padding: 1.0416rem 0}
-.navbar-brand{
-  color: #ffffff;
-  background-color: #002D59;
-  padding: 2.7083rem 1.0416rem;
-  position: absolute;
-  left: 0;
-  z-index: 1;
-}
-
-.navbar-brand:hover{
-  text-decoration: unset;
-  color: #ffffff;
-}
-
-.navbar-collapse{
-  justify-content: center;
-  margin-left: 4.8rem;
-}
-
-.nav-link{
-  color: #ffffff;
-  font-weight: bold;
-  font-size: .9375rem;
-  line-height: 1.0937rem;
-  padding: 0 1.3020rem !important; 
-}
-
-.footer .navbar {
-  padding: unset;
-}
-
-.footer .nav-link{
-  font-size: 0.7291rem;
 }
