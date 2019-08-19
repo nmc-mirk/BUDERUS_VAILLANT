@@ -1,0 +1,8 @@
+@media screen and (max-width: 450.9px) {
+  * { font-size: 6vw; }
+  .container--main {
+    max-width: unset;
+    margin: 0 0.8333rem;
+    position: relative;
+  }
+}
