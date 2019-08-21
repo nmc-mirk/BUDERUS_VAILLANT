@@ -3,6 +3,13 @@
   .container--main {
     max-width: unset;
     margin: 0 0.8333rem;
-    position: relative;
+  }
+
+  .header__section-top{
+    display: none;
+  }
+
+  .slider__section-tables{
+    display: none;
   }
 }

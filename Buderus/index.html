@@ -14,6 +14,7 @@
 </head>
 
 <body>
+  <!-- хэдэр -->
   <header class="header">
     <div class="header__section header__section-top">
       <div class="container--main">
@@ -41,22 +42,73 @@
       </div>
     </div>
     <div class="header__section header__section-nav">
-      <div class="container--main"></div>
+      <div class="container--main">
+        <nav class="header__nav">
+          <a href="" class="nav__logo">
+            <span class="logo__text">Инженерный центр</span>
+            <img src="./img/icons/logo_icon.svg" alt="" class="icon icon--logo">
+          </a>
+          <ul class="header__nav__menu">
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Преимущества</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Комплекты «Buderus»</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Акция</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Станции «Волгарь»</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Контакты</a></li>
+          </ul>
+          <div class="header__nav__burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </div>
+        </nav>
+      </div>
     </div>
   </header>
+  <!-- хэдер  -->
+  <!-- контент -->
   <main class="main">
+    <!-- первая секция со слайдером -->
     <section class="main__section main__section-slider">
       <div class="container--main">
         <div class="slider">
           <div class="slider__section slider__section-text">
-            <h1 class="title title--main">
-              Инженерный центр «Buderus»
-            </h1>
-            <p class="text text--slider-main">
-              Это структура, созданная на базе первой инженерной компании.
-              Наша задача - грамотное проектирование, поставка, монтаж,
-              сервисное обслуживание оборудования «Buderus»
-            </p>
+            <div class="owl-carousel owl-carousel--main__sub owl-theme">
+              <div>
+                <h1 class="title title--main">
+                  Инженерный центр «Buderus»
+                </h1>
+                <p class="text text--slider-main">
+                  Это структура, созданная на базе первой инженерной компании.
+                  Наша задача - грамотное проектирование, поставка, монтаж,
+                  сервисное обслуживание оборудования «Buderus»
+                </p>
+              </div>
+              <div>
+                <h1 class="title title--main">
+                  Инженерный центр «Buderus» - 2
+                </h1>
+                <p class="text text--slider-main">
+                  Это структура, созданная на базе первой инженерной компании.
+                  Наша задача - грамотное проектирование, поставка, монтаж,
+                  сервисное обслуживание оборудования «Buderus» - 2
+                </p>
+              </div>
+              <div>
+                <h1 class="title title--main">
+                  Инженерный центр «Buderus» - 3
+                </h1>
+                <p class="text text--slider-main">
+                  Это структура, созданная на базе первой инженерной компании.
+                  Наша задача - грамотное проектирование, поставка, монтаж,
+                  сервисное обслуживание оборудования «Buderus» - 3
+                </p>
+              </div>
+            </div>
           </div>
           <div class="slider__section slider__section-slider">
             <div class="owl-carousel owl-carousel--main owl-theme">
@@ -71,10 +123,27 @@
               </div>
             </div>
           </div>
-          <div class="slider__section slider__section-tables"></div>
+          <div class="slider__section slider__section-tables">
+            <div class="slider__table">
+              <div class="owl-carousel owl-carousel--main__sub owl-theme">
+                <p class="text text--slider__table">Преимущества покупки оборудования комплектом</p>
+                <p class="text text--slider__table">Преимущества покупки оборудования комплектом 2</p>
+                <p class="text text--slider__table">Преимущества покупки оборудования комплектом 3</p>
+              </div>
+            </div>
+            <div class="slider__table">
+              <p class="text text--slider__table">
+                Сервисный центр Buderus</p>
+              <a class="button button--slider__table">
+                Открыть сайт
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- первая секция со слайдером -->
+    <!-- вторая секция - преимущества -->
     <section class="main__section main__section-advantages">
       <div class="container--main">
         <div class="advantages">
@@ -96,7 +165,6 @@
                 </p>
               </div>
             </div>
-
             <div class="advantages__item advantages__item-garantee">
               <div class="advantages__item__section advantages__item__section-icon">
                 <img src="./img/icons/garantee_icon.svg" alt="garantee" class="icon icon--garantee" />
@@ -111,7 +179,6 @@
                 </p>
               </div>
             </div>
-
             <div class="advantages__item advantages__item-price">
               <div class="advantages__item__section advantages__item__section-icon">
                 <img src="./img/icons/price_icon.svg" alt="price" class="icon icon--price" />
@@ -126,7 +193,6 @@
                 </p>
               </div>
             </div>
-
             <div class="advantages__item advantages__item-sertificates">
               <div class="advantages__item__section advantages__item__section-icon">
                 <img src="./img/icons/sertificates_icon.svg" alt="sertificates" class="icon icon--sertificates" />
@@ -142,6 +208,8 @@
         </div>
       </div>
     </section>
+    <!-- вторая секция - преимущества -->
+    <!-- третья секцмя - специфика -->
     <section class="main__section main__section-specs">
       <div class="container--main">
         <div class="specs">
@@ -192,7 +260,8 @@
         </div>
       </div>
     </section>
-
+    <!-- третья секцмя - специфика -->
+    <!-- ад на земле или четвертая секция - комплекты -->
     <section class="main__section main__section-kits">
       <div class="container--main">
         <div class="kits">
@@ -259,9 +328,9 @@
                         <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
                       </select>
                       <p class="text text--kits__select">Горизонтальный проход через стену <img
-                          class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                          class="icon icon-inText icon--kits__select" src="./img/icons/option-icon.svg" alt=""></p>
                       <p class="text text--kits__select">Группа безопасности водонагревателя <img
-                          class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                          class="icon icon-inText icon--kits__select" src="./img/icons/option-icon.svg" alt=""></p>
                       <span class="kits__select__price">120 000</span>
                       <input value="Отправить заявку" type='submit' class="button button--kits__select" />
                       <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
@@ -377,7 +446,8 @@
         </div>
       </div>
     </section>
-
+    <!-- ад на земле или четвертая секция - комплекты -->
+    <!-- пятая секция - акция -->
     <section class="main__section main__section-stock">
       <div class="container--main">
         <div class="stock">
@@ -452,7 +522,8 @@
         </div>
       </div>
     </section>
-
+    <!-- пятая секция - акция -->
+    <!-- шестая секция - форма обратной связи -->
     <section class="main__section main__section-feedback">
       <div class="container--main">
         <div class="feedback">
@@ -489,6 +560,8 @@
         </div>
       </div>
     </section>
+    <!-- шестая секция - форма обратной связи -->
+    <!-- седьмая секция - инфо -->
     <section class="main__section main__section-info">
       <div class="container--main">
         <div class="info">
@@ -506,6 +579,8 @@
         </div>
       </div>
     </section>
+    <!-- седьмая секция - инфо -->
+    <!-- восьмая секция - станции Волгарь -->
     <section class="main__section main__section-product">
       <div class="container--main">
         <div class="product">
@@ -562,6 +637,8 @@
         </div>
       </div>
     </section>
+    <!-- восьмая секция - станции Волгарь -->
+    <!-- девятая секция - контакты -->
     <section class="main__section main__section-contacts">
       <div class="container--main">
         <div class="contacts">
@@ -593,10 +670,36 @@
         </div>
       </div>
     </section>
+    <!-- девятая секция - контакты -->
   </main>
+  <!-- футер -->
   <footer class="footer">
     <div class="footer__section footer__section-nav">
-      <div class="container--main"></div>
+      <div class="container--main">
+        <nav class="footer__nav">
+          <a href="" class="nav__logo">
+            <span class="logo__text">Инженерный центр</span>
+            <img src="./img/icons/logo_icon.svg" alt="" class="icon icon--logo">
+          </a>
+          <ul class="footer__nav__menu">
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Специфика</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Комплекты «Buderus»</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Акция</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Станции «Волгарь»</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Контакты</a></li>
+          </ul>
+          <div class="footer__nav__privacy">
+            <p class="text text--privacy__design">©2019 - Design by Utenyshev</p>
+            <a target="_blank" href="https://mirk.space" class="link link--madeby">Made by Vermqa</a>
+            <a href="" class="link link--politics">Политика конфиденциальности</a>
+          </div>
+        </nav>
+      </div>
     </div>
     <div class="footer__section footer__section-bottom">
       <div class="container--main">
@@ -606,15 +709,37 @@
       </div>
     </div>
   </footer>
+  <!-- футер -->
+
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/owl.carousel.min.js"></script>
   <script src="./js/main.js"></script>
+
+  <!-- настройка слайдеров -->
   <script>
     $(".owl-carousel--main").owlCarousel({
       items: 1,
       loop: true,
       nav: true,
+      mouseDrag: false,
       dots: false
+    });
+
+    $(".owl-carousel--main__sub").owlCarousel({
+      items: 1,
+      loop: true,
+      nav: false,
+      dots: false,
+      mouseDrag: false,
+      animateIn: 'flipInX'
+    });
+
+    $(".owl-carousel--main").on('click', '.owl-next', function () {
+      $(".owl-carousel--main__sub").trigger('next.owl.carousel')
+    });
+
+    $(".owl-carousel--main").on('click', '.owl-prev', function () {
+      $(".owl-carousel--main__sub").trigger('prev.owl.carousel')
     });
 
     $(".owl-carousel--spec").owlCarousel({
