@@ -452,7 +452,7 @@ a {
 .kits__proress__stage-one::after {
   content: "";
   position: absolute;
-  border: 0.0267rem solid #9dafbd;
+  border: .5px solid #9dafbd;
   padding-bottom: 4.2rem;
   left: 0.19rem;
   z-index: -1;
@@ -466,20 +466,20 @@ a {
 .kits__proress__stage-two::after {
   content: "";
   position: absolute;
-  border: 0.0267rem solid #9dafbd;
+  border: .5px solid #9dafbd;
   padding-bottom: 3.5rem;
   left: 0.19rem;
   z-index: -1;
 }
 
 .kits__proress__stage-three {
-  margin-top: 2.75rem;
+  margin-top: 2.6rem;
 }
 
 .kits__proress__stage-three::after {
   content: "";
   position: absolute;
-  border: 0.0267rem solid #9dafbd;
+  border: .5px solid #9dafbd;
   padding-bottom: 2rem;
   left: 0.19rem;
   z-index: -1;
@@ -492,7 +492,7 @@ a {
 .kits__proress__stage-four::after {
   content: "";
   position: absolute;
-  border: 0.0267rem solid #9dafbd;
+  border: .5px solid #9dafbd;
   padding-bottom: 3.5rem;
   left: 0.19rem;
   z-index: -1;
@@ -509,7 +509,7 @@ a {
 }
 
 .kits__stage--active::after {
-  border: 0.0267rem solid #002d59;
+  border: .5px solid #002d59;
 }
 
 /* Акция */
@@ -886,6 +886,7 @@ h4 {
 /* Текст */
 .text--bold {
   font-weight: 600;
+  display: inline;
 }
 
 .text--slider-main {
