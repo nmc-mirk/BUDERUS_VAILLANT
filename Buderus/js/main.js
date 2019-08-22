@@ -1,3 +1,10 @@
+// burger
+document.querySelector('.header__nav__burger').addEventListener('click', ()=>{
+  document.querySelector('.header__nav__menu').classList.toggle('header__nav__menu--open')
+})
+
+
+
 // const stages = [
 //   {
 //     select: ['first__slide__item-one', 'first__slide__item-two'],
