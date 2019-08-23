@@ -78,18 +78,18 @@
         <div class="slider">
           <div class="slider__section slider__section-text">
             <div class="owl-carousel owl-carousel--main__sub owl-theme">
-                <h1 class="title title--main">
-                  Инженерный центр «Buderus»
-                </h1>
-                <h1 class="title title--main">
-                  Преимущества покупки
-                </h1>
-              </div>
-                <p class="text text--slider-main">
-                  Это структура, созданная на базе первой инженерной компании.
-                  Наша задача - грамотное проектирование, поставка, монтаж,
-                  сервисное обслуживание оборудования «Buderus»
-                </p>
+              <h1 class="title title--main">
+                Инженерный центр «Buderus»
+              </h1>
+              <h1 class="title title--main">
+                Преимущества покупки
+              </h1>
+            </div>
+            <p class="text text--slider-main">
+              Это структура, созданная на базе первой инженерной компании.
+              Наша задача - грамотное проектирование, поставка, монтаж,
+              сервисное обслуживание оборудования «Buderus»
+            </p>
           </div>
           <div class="slider__section slider__section-slider">
             <div class="owl-carousel owl-carousel--main owl-theme">
@@ -270,123 +270,165 @@
             <div class="owl-carousel owl-carousel--kits-content owl-theme">
               <div class="kits__content">
                 <div class="kits__content__section kits__content__section-slider">
-                  <img class="kits__slider__image" src="./img/pic/kits_slider.png" alt="" />
-                </div>
-                <div class="kits__content__section kits__content__section-progress">
-                  <div class="kits__progress">
-                    <span id='second__slide__stage__one' class="kits__proress__stage kits__proress__stage-one"></span>
-                    <span id='second__slide__stage__two' class="kits__proress__stage kits__proress__stage-two"></span>
-                    <span id='second__slide__stage__three'
-                      class="kits__proress__stage kits__proress__stage-three"></span>
-                    <span id='second__slide__stage__four' class="kits__proress__stage kits__proress__stage-four"></span>
-                    <span id='second__slide__stage__five' class="kits__proress__stage kits__proress__stage-five"></span>
-                  </div>
+                  <img class="kits__slider__image" src="./img/pic/kits_1.png" alt="" />
                 </div>
                 <div class="kits__content__section kits__content__section-select">
                   <div class="kits__select">
                     <form action="" class="kits__select__form">
-                      <select id='second__slide__item-one' class="kits__select__item">
-                        <option disabled selected class="kits__select__option">Выберите котел</option>
-                        <option class="kits__select__option" value="Котел 1">Котел 1</option>
-                        <option class="kits__select__option" value="Котел 2">Котел 2</option>
-                        <option class="kits__select__option" value="Котел 3">Котел 3</option>
-                      </select>
-                      <select id='second__slide__item-two' class="kits__select__item">
-                        <option disabled selected class="kits__select__option">Выберите бойлер</option>
-                        <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
-                        <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
-                        <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
-                      </select>
-                      <p class="text text--kits__select">Горизонтальный проход через стену <img
-                          class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                      <p class="text text--kits__select">Группа безопасности водонагревателя <img
-                          class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                      <span class="kits__select__price">130 000</span>
-                      <input value="Отправить заявку" type='submit' class="button button--kits__select" />
-                      <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
-                        действует при заключении договора на монтаж</p>
+                      <ul class="form__list">
+                        <li class="form__list__item" onchange="kitsFirst(this)">
+                          <select class="kits__select__item">
+                            <option disabled selected class="kits__select__option">Выберите котел</option>
+                            <option class="kits__select__option" value="Котел 1">Котел 1</option>
+                            <option class="kits__select__option" value="Котел 2">Котел 2</option>
+                            <option class="kits__select__option" value="Котел 3">Котел 3</option>
+                          </select>
+                        </li>
+                        <li class="form__list__item" onchange="kitsSecond(this)">
+                          <select disabled class="kits__select__item">
+                            <option disabled selected class="kits__select__option">Выберите бойлер</option>
+                            <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
+                            <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
+                            <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
+                          </select>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Горизонтальный проход через стену <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Группа безопасности водонагревателя <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <span class="kits__select__price">130 000</span>
+                        </li>
+                        <input value="Отправить заявку" type='submit' class="button button--kits__select" />
+                        <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
+                          действует при заключении договора на монтаж</p>
+                      </ul>
                     </form>
                   </div>
                 </div>
               </div>
               <div class="kits__content">
                 <div class="kits__content__section kits__content__section-slider">
-                  <img class="kits__slider__image" src="./img/pic/kits_slider.png" alt="" />
-                </div>
-                <div class="kits__content__section kits__content__section-progress">
-                  <div class="kits__progress">
-                    <span id='second__slide__stage__one' class="kits__proress__stage kits__proress__stage-one"></span>
-                    <span id='second__slide__stage__two' class="kits__proress__stage kits__proress__stage-two"></span>
-                    <span id='second__slide__stage__three'
-                      class="kits__proress__stage kits__proress__stage-three"></span>
-                    <span id='second__slide__stage__four' class="kits__proress__stage kits__proress__stage-four"></span>
-                    <span id='second__slide__stage__five' class="kits__proress__stage kits__proress__stage-five"></span>
-                  </div>
+                  <img class="kits__slider__image" src="./img/pic/kits_2.png" alt="" />
                 </div>
                 <div class="kits__content__section kits__content__section-select">
                   <div class="kits__select">
                     <form action="" class="kits__select__form">
-                      <select id='second__slide__item-one' class="kits__select__item">
-                        <option disabled selected class="kits__select__option">Выберите котел</option>
-                        <option class="kits__select__option" value="Котел 1">Котел 1</option>
-                        <option class="kits__select__option" value="Котел 2">Котел 2</option>
-                        <option class="kits__select__option" value="Котел 3">Котел 3</option>
-                      </select>
-                      <select id='second__slide__item-two' class="kits__select__item">
-                        <option disabled selected class="kits__select__option">Выберите бойлер</option>
-                        <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
-                        <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
-                        <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
-                      </select>
-                      <p class="text text--kits__select">Горизонтальный проход через стену <img
-                          class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                      <p class="text text--kits__select">Группа безопасности водонагревателя <img
-                          class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                      <span class="kits__select__price">130 000</span>
-                      <input value="Отправить заявку" type='submit' class="button button--kits__select" />
-                      <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
-                        действует при заключении договора на монтаж</p>
+                      <ul class="form__list">
+                        <li class="form__list__item" onchange="kitsFirst(this)">
+                          <select class="kits__select__item">
+                            <option disabled selected class="kits__select__option">Выберите котел</option>
+                            <option class="kits__select__option" value="Котел 1">Котел 1</option>
+                            <option class="kits__select__option" value="Котел 2">Котел 2</option>
+                            <option class="kits__select__option" value="Котел 3">Котел 3</option>
+                          </select>
+                        </li>
+                        <li class="form__list__item" onchange="kitsSecond(this)">
+                          <select disabled class="kits__select__item">
+                            <option disabled selected class="kits__select__option">Выберите бойлер</option>
+                            <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
+                            <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
+                            <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
+                          </select>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">система управления MC 110 c регулятором RC 310 <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Комплект безопасности котла <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Группа безопасности бойлера <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Гребенка отопительного контура Ду25 <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Насосная группа без сместителя/со сместителем  Ду25 <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Датчик бойлера AS-1 <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <span class="kits__select__price">130 000</span>
+                        </li>
+                        <input value="Отправить заявку" type='submit' class="button button--kits__select" />
+                        <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
+                          действует при заключении договора на монтаж</p>
+                      </ul>
                     </form>
                   </div>
                 </div>
               </div>
               <div class="kits__content">
                 <div class="kits__content__section kits__content__section-slider">
-                  <img class="kits__slider__image" src="./img/pic/kits_slider.png" alt="" />
-                </div>
-                <div class="kits__content__section kits__content__section-progress">
-                  <div class="kits__progress">
-                    <span id='second__slide__stage__one' class="kits__proress__stage kits__proress__stage-one"></span>
-                    <span id='second__slide__stage__two' class="kits__proress__stage kits__proress__stage-two"></span>
-                    <span id='second__slide__stage__three'
-                      class="kits__proress__stage kits__proress__stage-three"></span>
-                    <span id='second__slide__stage__four' class="kits__proress__stage kits__proress__stage-four"></span>
-                    <span id='second__slide__stage__five' class="kits__proress__stage kits__proress__stage-five"></span>
-                  </div>
+                  <img class="kits__slider__image" src="./img/pic/kits_3.png" alt="" />
                 </div>
                 <div class="kits__content__section kits__content__section-select">
                   <div class="kits__select">
                     <form action="" class="kits__select__form">
-                      <select id='second__slide__item-one' class="kits__select__item">
-                        <option disabled selected class="kits__select__option">Выберите котел</option>
-                        <option class="kits__select__option" value="Котел 1">Котел 1</option>
-                        <option class="kits__select__option" value="Котел 2">Котел 2</option>
-                        <option class="kits__select__option" value="Котел 3">Котел 3</option>
-                      </select>
-                      <select id='second__slide__item-two' class="kits__select__item">
-                        <option disabled selected class="kits__select__option">Выберите бойлер</option>
-                        <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
-                        <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
-                        <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
-                      </select>
-                      <p class="text text--kits__select">Горизонтальный проход через стену <img
-                          class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                      <p class="text text--kits__select">Группа безопасности водонагревателя <img
-                          class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                      <span class="kits__select__price">130 000</span>
-                      <input value="Отправить заявку" type='submit' class="button button--kits__select" />
-                      <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
-                        действует при заключении договора на монтаж</p>
+                      <ul class="form__list">
+                        <li class="form__list__item" onchange="kitsFirst(this)">
+                          <select class="kits__select__item">
+                            <option disabled selected class="kits__select__option">Выберите котел</option>
+                            <option class="kits__select__option" value="Котел 1">Котел 1</option>
+                            <option class="kits__select__option" value="Котел 2">Котел 2</option>
+                            <option class="kits__select__option" value="Котел 3">Котел 3</option>
+                          </select>
+                        </li>
+                        <li class="form__list__item" onchange="kitsSecond(this)">
+                          <select disabled class="kits__select__item">
+                            <option disabled selected class="kits__select__option">Выберите бойлер</option>
+                            <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
+                            <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
+                            <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
+                          </select>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Гидравлическая стрелка WHY 120/80 <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Гребенка котла HKV 3/32/40 для 3  контуров <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Комплект отопительного контура HSM 32/7.5 DNA со сместителем DN 32 (3 шт. <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Группа безопасности котла 1*SV3/4* до 100 кВт <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">Пульт управления RC310 White <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">модуль MM100-C (3 шт.)  <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <p class="text text--kits__select">комплект датчика FV/FZ (3 шт.), комплект подключения бака – в/н AS1 <img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
+                        </li>
+                        <li class="form__list__item">
+                          <span class="kits__select__price">130 000</span>
+                        </li>
+                        <input value="Отправить заявку" type='submit' class="button button--kits__select" />
+                        <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
+                          действует при заключении договора на монтаж</p>
+                      </ul>
                     </form>
                   </div>
                 </div>
@@ -417,48 +459,48 @@
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                <h4 class="title title--stock-item">Комплект 1</h4>
-                <span class="stock__item__description__old-price">84 505</span>
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
+                <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                <h4 class="title title--stock-item">Комплект 1</h4>
-                <span class="stock__item__description__old-price">84 505</span>
+                  <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
+                      <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                <h4 class="title title--stock-item">Комплект 1</h4>
-                <span class="stock__item__description__old-price">84 505</span>
+                  <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
+                      <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                <h4 class="title title--stock-item">Комплект 1</h4>
-                <span class="stock__item__description__old-price">84 505</span>
+                  <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
+                      <span class="text text--red">+ Волгарь-5-2360-C</span></h4> 
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                <h4 class="title title--stock-item">Комплект 1</h4>
-                <span class="stock__item__description__old-price">84 505</span>
+                  <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
+                      <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                <h4 class="title title--stock-item">Комплект 1</h4>
-                <span class="stock__item__description__old-price">84 505</span>
+                  <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
+                      <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
@@ -730,18 +772,18 @@
       nav: true,
       dots: false,
       margin: 30,
-      responsive : {
-    // breakpoint from 0 up
-    0 : {
-      items: 1.3,
-      nav: false,
-      margin: 1
-    },
-    // breakpoint from 480 up
-    450 : {
-      items: 4
-    }
-}
+      responsive: {
+        // breakpoint from 0 up
+        0: {
+          items: 1.3,
+          nav: false,
+          margin: 1
+        },
+        // breakpoint from 480 up
+        450: {
+          items: 4
+        }
+      }
     });
   </script>
 </body>

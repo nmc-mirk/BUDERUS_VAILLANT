@@ -342,27 +342,60 @@ h2{
 }
 
 .kits__content__section-select{
-  width: 94%;
+  width: 92%;
   margin-left: auto;
-}
-.kits__content__section-progress {
-  padding: unset;
-  position: relative;
-  left: -.2rem;
-}
-.kits__progress{
-  margin: 0 0 10.5rem 0;
-  width: 0;
-}
-
-.kits__proress__stage-two {
-  margin-top: 2.6458rem;
-  position: relative;
 }
 
 .text--kits__select{
   font-size: .71rem;
 }
 
+.contacts{
+  flex-direction: column-reverse;
+  padding: 1.3541rem 0;
+  position: relative;
+}
+
+.contacts__section-map{
+  width: 100%;
+  height: 10.7812rem;
+  position: absolute;
+  top: 4.5rem;
+}
+.title--contacts {
+  padding: 0 0 13.5rem 0;
+}
+
+.link--contacts-email,
+.link--contacts-phone,
+.text--contacts{
+  font-size: 0.7291rem;
+}
+
+.text--contacts{
+  padding: 0 0 1rem 0;
+}
+
+.link--contacts-phone:nth-child(3)::after {
+  display: block;
+  font-size: 0.625rem;
+  margin-top: -.4rem;
+}
+
+.contacts__content__item--email{
+  padding: 0 0 0.9375rem 0;
+}
+.contacts__content__item__links{
+  padding: unset;
+}
+
+h4{
+  font-size: .625rem;
+  line-height: 0.7291rem;
+}
+
+.stock__item__description{
+  padding: 0.9375rem 0.6770rem 0.6770rem;
+}
   
 }

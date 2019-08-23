@@ -336,12 +336,7 @@ a {
 
 .kits__content {
   display: flex;
-  align-items: center;
 }
-.kits__content__section-progress{
-  padding: 0 1.8rem 0 1.5rem;
-}
-
 
 .kits__select__form {
   display: flex;
@@ -414,6 +409,7 @@ a {
 
 .kits__slider__image{
   width: 30.5729rem !important;
+  margin-right: 4rem;
 }
 
 .kits .owl-dot span {
@@ -440,88 +436,53 @@ a {
 .kits__select__price::before {
   content: "от ";
 }
-
-.kits__progress {
-  margin: 0 0 7rem 1.5rem;
-}
-
-.kits__proress__stage {
-  width: 0.4166666666666667rem;
-  height: 0.4166666666666667rem;
-  border-radius: 100%;
-  background-color: #9dafbd;
-  left: 0.25rem;
+.form__list__item{
+  display: list-item;
+  vertical-align: middle;
   position: relative;
+  color: #9DAFBD;
 }
-
-.kits__proress__stage-one {
-  position: relative;
-  background-color: #002d59;
-}
-
-.kits__proress__stage-one::after {
-  content: "";
+.form__list__item:before{
+  content: '';
+  border: .5px solid #9DAFBD;
+  top: 25%;
   position: absolute;
-  border: .5px solid #9dafbd;
-  padding-bottom: 4.2rem;
-  left: 0.19rem;
+  left: -.9rem;
+  height: 100%;
   z-index: -1;
 }
 
-.kits__proress__stage-two {
-  margin-top: 3.6458rem;
-  position: relative;
+.form__list__item:last-of-type:before{
+  height: 30%;
+  top: 13%;
+}
+.form__list__item:nth-of-type(2):before{
+  height: 74%;
+  top: 38%;
+}
+.form__list__item:first-of-type:before{
+  top: 40%;
+  height: 100%;
 }
 
-.kits__proress__stage-two::after {
-  content: "";
-  position: absolute;
-  border: .5px solid #9dafbd;
-  padding-bottom: 3.5rem;
-  left: 0.19rem;
-  z-index: -1;
+.form__list__item--active{
+  color: #000000;
+}
+.form__list__item--active:before{
+  border: .5px solid #000000;
 }
 
-.kits__proress__stage-three {
-  margin-top: 2.6rem;
+.kits__select__item:disabled{
+  opacity: .4;
+}
+.kits__content__section-select{
+  width: 40%;
+  display: none;
 }
 
-.kits__proress__stage-three::after {
-  content: "";
-  position: absolute;
-  border: .5px solid #9dafbd;
-  padding-bottom: 2rem;
-  left: 0.19rem;
-  z-index: -1;
+.owl-item.active .kits__content__section-select{
+  display: flex;
 }
-
-.kits__proress__stage-four {
-  margin-top: 1.55rem;
-}
-
-.kits__proress__stage-four::after {
-  content: "";
-  position: absolute;
-  border: .5px solid #9dafbd;
-  padding-bottom: 3.5rem;
-  left: 0.19rem;
-  z-index: -1;
-}
-
-.kits__proress__stage-five {
-  margin-top: 3rem;
-}
-
-.kits__stage--active {
-  width: 0.4166666666666667rem;
-  height: 0.4166666666666667rem;
-  background-color: #002d59;
-}
-
-.kits__stage--active::after {
-  border: .5px solid #002d59;
-}
-
 /* Акция */
 
 .stock {
@@ -560,17 +521,6 @@ a {
 .stock__item__description {
   padding: 0.7812rem;
   background-color: #eff0f1;
-}
-
-.stock__item__description__old-price {
-  text-decoration-line: line-through;
-  font-size: 0.7291rem;
-  padding: 0 0 0.5208rem 0;
-  line-height: 0.8333rem;
-}
-
-.stock__item__description__old-price:after {
-  content: " руб.";
 }
 
 .stock__item__description__price {
@@ -661,8 +611,8 @@ a {
 
 .product__slider__title {
   padding: 0 0 0.78125rem 0;
-  font-size: 0.9375rem;
-  line-height: 1.09375rem;
+  font-size: 0.7291rem;
+  line-height: 0.8333rem;
   text-transform: uppercase;
 }
 
@@ -856,8 +806,8 @@ h3 {
 }
 
 h4 {
-  font-size: 0.8333rem;
-  line-height: 0.9895rem;
+  font-size: 0.7291rem;
+  line-height: 0.8333rem;
 }
 
 .title {
@@ -888,7 +838,7 @@ h4 {
 
 .title--stock-item {
   color: #3c3c3b;
-  padding-bottom: 2.5rem;
+  padding-bottom: 0.625rem;
 }
 
 .title--contacts {
@@ -1001,6 +951,10 @@ h4 {
   line-height: 1.0937rem;
 }
 
+.text--red{
+  color: red;
+}
+
 /* Ссылки */
 
 .link--feedback-policy {
@@ -1020,6 +974,9 @@ h4 {
 }
 .link--contacts-phone:nth-child(3)::after {
   content: " (телефон сервисной службы)";
+}
+.link--contacts-phone:nth-child(3):hover::after {
+  color: #373737;
 }
 
 .link--policy {
@@ -1095,7 +1052,9 @@ h4 {
 .button--kits__select {
   background-color: #002d59;
   color: #ffffff;
+  width: 100%;
 }
+
 .button--kits__select:hover,
 .button--kits__select:focus {
   color: #ffffff;
@@ -1125,4 +1084,13 @@ h4 {
     height: 32.5rem;
     width: unset;
   }
+  .slider__section-tables {
+    position: absolute;
+    right: 4.41666rem;
+    bottom: 2.65625rem;
+    z-index: 1;
+    width: 33.3333rem;
+    display: flex;
+    justify-content: space-between;
+}
 }

@@ -3,40 +3,21 @@ document.querySelector('.header__nav__burger').addEventListener('click', ()=>{
   document.querySelector('.header__nav__menu').classList.toggle('header__nav__menu--open')
 })
 
+// kits selector magic
+function kitsFirst (e) {
+  e.classList.add('form__list__item--active')
+  // e.nextSibling.nextSibling.classList.add('form__list__item--active')
+  e.nextSibling.nextSibling.childNodes[1].disabled = false
+}
 
+function kitsSecond (e) {
+  const el = e.parentNode.children
 
-// const stages = [
-//   {
-//     select: ['first__slide__item-one', 'first__slide__item-two'],
-//     stage: ['first__slide__stage__one', 'first__slide__stage__two', 'first__slide__stage__three', 'first__slide__stage__four', 'first__slide__stage__five']
-//   },
-//   {
-//     select: ['second__slide__item-one', 'second__slide__item-two'],
-//     stage: ['second__slide__stage__one', 'second__slide__stage__two', 'second__slide__stage__three', 'second__slide__stage__four', 'second__slide__stage__five']
-//   },
-//   {
-//     select: ['third__slide__item-one', 'third__slide__item-two'],
-//     stage: ['third__slide__stage__one', 'third__slide__stage__two', 'third__slide__stage__three', 'third__slide__stage__four', 'third__slide__stage__five']
-//   },
-// ];
-
-// stages.map((slide, i) => {
-//   window['kits__select__' + i] = document.querySelector(`#${slide.select.map(item => item)}`);
-//   window['kits__proress__' + i] = document.querySelector(`#${slide.stage.map(item => item)}`);
-// })
-
-// kits__select__one.addEventListener('change', ()=>{
-//   if (kits__select__one.value !== 'Выберите котел') {
-//     kits__proress__stage__one.classList.add('kits__stage--active');
-//     kits__proress__stage__two.classList.add('kits__stage--active');
-//   }
-// });
-
-// kits__select__two.addEventListener('change', ()=>{
-//   if(kits__select__two.value !== 'Выберите бойлер') {
-//     kits__proress__stage__three.classList.add('kits__stage--active');
-//     kits__proress__stage__four.classList.add('kits__stage--active');
-//     kits__proress__stage__five.classList.add('kits__stage--active');
-//   }
-// });
-
+  for (var i in el) {
+    el[i].classList !== undefined 
+    ? (el[i].classList.value.includes('form__list__item') 
+      ? el[i].classList.add('form__list__item--active') 
+      : null)
+    : null
+  }
+}
