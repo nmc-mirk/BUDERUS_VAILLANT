@@ -8,9 +8,9 @@
   <title>Buderus</title>
   <link rel="stylesheet" href="./css/owl.carousel.min.css" />
   <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/tablet.css" />
-  <link rel="stylesheet" href="./css/mobile.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/tablet.min.css" />
+  <link rel="stylesheet" href="./css/mobile.min.css" />
 </head>
 
 <body>
@@ -46,7 +46,7 @@
         <nav class="header__nav">
           <a href="" class="nav__logo">
             <span class="logo__text">Инженерный центр</span>
-            <img src="./img/icons/logo_icon.svg" alt="" class="icon icon--logo">
+            <img src="./img/icons/logo_icon.svg" alt="Buderus" class="icon icon--logo">
           </a>
           <ul class="header__nav__menu">
             <li class="menu__item">
@@ -94,13 +94,13 @@
           <div class="slider__section slider__section-slider">
             <div class="owl-carousel owl-carousel--main owl-theme">
               <div class="owl__item--main">
-                <img class="main__slider__image" src="./img/pic/slider_section_bg.png" alt="" />
+                <img class="main__slider__image" src="./img/pic/slider_section_bg.png" alt="slide1" />
               </div>
               <div class="owl__item--main">
-                <img class="main__slider__image" src="./img/pic/slider_section_bg.png" alt="" />
+                <img class="main__slider__image" src="./img/pic/slider_section_bg.png" alt="slide2" />
               </div>
               <div class="owl__item--main">
-                <img class="main__slider__image" src="./img/pic/slider_section_bg.png" alt="" />
+                <img class="main__slider__image" src="./img/pic/slider_section_bg.png" alt="slide3" />
               </div>
             </div>
           </div>
@@ -173,7 +173,7 @@
                 </p>
               </div>
             </div>
-            <div class="advantages__item advantages__item-sertificates">
+            <div class="advantages__item advantages__item-sertificates" onclick="modalToggle()">
               <div class="advantages__item__section advantages__item__section-icon">
                 <img src="./img/icons/sertificates_icon.svg" alt="sertificates" class="icon icon--sertificates" />
               </div>
@@ -182,6 +182,16 @@
               </div>
               <div class="advantages__item__section advantages__item__section-description">
                 <p class="text text--sertificates"></p>
+              </div>
+            </div>
+            <div class="modal">
+              <div class="modal__content">
+                <div onclick="modalToggle()" class="modal__close"><img src="./img/icons/cross__icon.svg" alt="close">
+                </div>
+                <div class="modal__text">
+                  <img class="image img--modal" src="./img/pic/modal.jpg" alt="certificate">
+                  <img class="image img--modal" src="./img/pic/modal.jpg" alt="certificate">
+                </div>
               </div>
             </div>
           </div>
@@ -201,13 +211,13 @@
           <div class="specs__section specs__section-slider">
             <div class="owl-carousel owl-carousel--spec owl-theme">
               <div class="owl__item--spec">
-                <img class="spec__slider__image" src="./img/pic/specs_pic.png" alt="" />
+                <img class="spec__slider__image" src="./img/pic/specs_pic.png" alt="spec1" />
               </div>
               <div class="owl__item--spec">
-                <img class="spec__slider__image" src="./img/pic/specs_pic.png" alt="" />
+                <img class="spec__slider__image" src="./img/pic/specs_pic.png" alt="spec2" />
               </div>
               <div class="owl__item--spec">
-                <img class="spec__slider__image" src="./img/pic/specs_pic.png" alt="" />
+                <img class="spec__slider__image" src="./img/pic/specs_pic.png" alt="spec3" />
               </div>
             </div>
           </div>
@@ -243,8 +253,8 @@
     <!-- третья секцмя - специфика -->
     <!-- ад на земле или четвертая секция - комплекты -->
     <section id='kits' class="main__section main__section-kits">
-      <div class="container--main">
-        <div class="kits">
+      <div class="kits">
+        <div class="container--main">
           <div class="kits__section kits__section-title">
             <h2 class="title title--kits">Комплекты</h2>
           </div>
@@ -266,171 +276,209 @@
               <li class="tabs__tab">С настенными конденсатными котлами</li>
             </ul>
           </div>
-          <div class="kits__section kits__section-content">
-            <div class="owl-carousel owl-carousel--kits-content owl-theme">
-              <div class="kits__content">
-                <div class="kits__content__section kits__content__section-slider">
-                  <img class="kits__slider__image" src="./img/pic/kits_1.png" alt="" />
-                </div>
-                <div class="kits__content__section kits__content__section-select">
-                  <div class="kits__select">
-                    <form action="" class="kits__select__form">
-                      <ul class="form__list">
-                        <li class="form__list__item" onchange="kitsFirst(this)">
-                          <select class="kits__select__item">
-                            <option disabled selected class="kits__select__option">Выберите котел</option>
-                            <option class="kits__select__option" value="Котел 1">Котел 1</option>
-                            <option class="kits__select__option" value="Котел 2">Котел 2</option>
-                            <option class="kits__select__option" value="Котел 3">Котел 3</option>
-                          </select>
-                        </li>
-                        <li class="form__list__item" onchange="kitsSecond(this)">
-                          <select disabled class="kits__select__item">
-                            <option disabled selected class="kits__select__option">Выберите бойлер</option>
-                            <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
-                            <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
-                            <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
-                          </select>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Горизонтальный проход через стену <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Группа безопасности водонагревателя <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <span class="kits__select__price">130 000</span>
-                        </li>
-                        <input value="Отправить заявку" type='submit' class="button button--kits__select" />
-                        <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
-                          действует при заключении договора на монтаж</p>
-                      </ul>
-                    </form>
-                  </div>
+        </div>
+        <div class="kits__section kits__section-content">
+          <div class="owl-carousel owl-carousel--kits-content owl-theme">
+            <div class="kits__content">
+              <div class="kits__content__section kits__content__section-slider">
+                <img class="kits__slider__image" src="./img/pic/kits_1.png" alt="kit1" />
+              </div>
+              <div class="kits__content__section kits__content__section-select">
+                <div class="kits__select">
+                  <form action="" class="kits__select__form">
+                    <ul class="form__list">
+                      <li class="form__list__item" onchange="kitsFirst(this)">
+                        <select class="kits__select__item">
+                          <option disabled selected class="kits__select__option">Выберите котел</option>
+                          <option class="kits__select__option" value="Котел 1">Котел 1</option>
+                          <option class="kits__select__option" value="Котел 2">Котел 2</option>
+                          <option class="kits__select__option" value="Котел 3">Котел 3</option>
+                        </select>
+                        <span class="hint"><img class="icon icon-inText icon--kits__selec"
+                            src="./img/icons/option-icon.svg" alt="option">
+                          <span class="hint__text">хинт jklhjkl</span></span>
+                      </li>
+                      <li class="form__list__item" onchange="kitsSecond(this)">
+                        <select disabled class="kits__select__item">
+                          <option disabled selected class="kits__select__option">Выберите бойлер</option>
+                          <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
+                          <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
+                          <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
+                        </select>
+                        <span class="hint"><img class="icon icon-inText icon--kits__selec"
+                            src="./img/icons/option-icon.svg" alt="option">
+                          <span class="hint__text">хинт lhjk;hjk;</span></span>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Горизонтальный проход через стену <span class="hint"><img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 8957897</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Группа безопасности водонагревателя <span class="hint"><img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 0</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <span class="kits__select__price">130 000</span>
+                      </li>
+                      <button type='submit' class="button button--kits__select">Отправить заявку</button>
+                      <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
+                        действует при заключении договора на монтаж</p>
+                    </ul>
+                  </form>
                 </div>
               </div>
-              <div class="kits__content">
-                <div class="kits__content__section kits__content__section-slider">
-                  <img class="kits__slider__image" src="./img/pic/kits_2.png" alt="" />
-                </div>
-                <div class="kits__content__section kits__content__section-select">
-                  <div class="kits__select">
-                    <form action="" class="kits__select__form">
-                      <ul class="form__list">
-                        <li class="form__list__item" onchange="kitsFirst(this)">
-                          <select class="kits__select__item">
-                            <option disabled selected class="kits__select__option">Выберите котел</option>
-                            <option class="kits__select__option" value="Котел 1">Котел 1</option>
-                            <option class="kits__select__option" value="Котел 2">Котел 2</option>
-                            <option class="kits__select__option" value="Котел 3">Котел 3</option>
-                          </select>
-                        </li>
-                        <li class="form__list__item" onchange="kitsSecond(this)">
-                          <select disabled class="kits__select__item">
-                            <option disabled selected class="kits__select__option">Выберите бойлер</option>
-                            <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
-                            <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
-                            <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
-                          </select>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">система управления MC 110 c регулятором RC 310 <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Комплект безопасности котла <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Группа безопасности бойлера <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Гребенка отопительного контура Ду25 <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Насосная группа без сместителя/со сместителем  Ду25 <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Датчик бойлера AS-1 <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <span class="kits__select__price">130 000</span>
-                        </li>
-                        <input value="Отправить заявку" type='submit' class="button button--kits__select" />
-                        <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
-                          действует при заключении договора на монтаж</p>
-                      </ul>
-                    </form>
-                  </div>
+            </div>
+            <div class="kits__content">
+              <div class="kits__content__section kits__content__section-slider">
+                <img class="kits__slider__image" src="./img/pic/kits_2.png" alt="kit2" />
+              </div>
+              <div class="kits__content__section kits__content__section-select">
+                <div class="kits__select">
+                  <form action="" class="kits__select__form">
+                    <ul class="form__list">
+                      <li class="form__list__item" onchange="kitsFirst(this)">
+                        <select class="kits__select__item">
+                          <option disabled selected class="kits__select__option">Выберите котел</option>
+                          <option class="kits__select__option" value="Котел 1">Котел 1</option>
+                          <option class="kits__select__option" value="Котел 2">Котел 2</option>
+                          <option class="kits__select__option" value="Котел 3">Котел 3</option>
+                        </select>
+                        <span class="hint"><img class="icon icon-inText icon--kits__selec"
+                            src="./img/icons/option-icon.svg" alt="option">
+                          <span class="hint__text">хинт 1</span></span>
+                      </li>
+                      <li class="form__list__item" onchange="kitsSecond(this)">
+                        <select disabled class="kits__select__item">
+                          <option disabled selected class="kits__select__option">Выберите бойлер</option>
+                          <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
+                          <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
+                          <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
+                        </select>
+                        <span class="hint"><span class="hint"><img class="icon icon-inText icon--kits__selec"
+                              src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 2</span></span>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">система управления MC 110 c регулятором RC 310 <img
+                            class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt="option">
+                        </p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Комплект безопасности котла <span class="hint"><img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 3</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Группа безопасности бойлера <span class="hint"><img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 4</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Гребенка отопительного контура Ду25 <span class="hint"><img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 5</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Насосная группа без сместителя/со сместителем Ду25 <span
+                            class="hint"><img class="icon icon-inText icon--kits__selec"
+                              src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 6</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Датчик бойлера AS-1 <span class="hint"><img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 7</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <span class="kits__select__price">130 000</span>
+                      </li>
+                      <button type='submit' class="button button--kits__select">Отправить заявку</button>
+                      <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
+                        действует при заключении договора на монтаж</p>
+                    </ul>
+                  </form>
                 </div>
               </div>
-              <div class="kits__content">
-                <div class="kits__content__section kits__content__section-slider">
-                  <img class="kits__slider__image" src="./img/pic/kits_3.png" alt="" />
-                </div>
-                <div class="kits__content__section kits__content__section-select">
-                  <div class="kits__select">
-                    <form action="" class="kits__select__form">
-                      <ul class="form__list">
-                        <li class="form__list__item" onchange="kitsFirst(this)">
-                          <select class="kits__select__item">
-                            <option disabled selected class="kits__select__option">Выберите котел</option>
-                            <option class="kits__select__option" value="Котел 1">Котел 1</option>
-                            <option class="kits__select__option" value="Котел 2">Котел 2</option>
-                            <option class="kits__select__option" value="Котел 3">Котел 3</option>
-                          </select>
-                        </li>
-                        <li class="form__list__item" onchange="kitsSecond(this)">
-                          <select disabled class="kits__select__item">
-                            <option disabled selected class="kits__select__option">Выберите бойлер</option>
-                            <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
-                            <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
-                            <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
-                          </select>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Гидравлическая стрелка WHY 120/80 <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Гребенка котла HKV 3/32/40 для 3  контуров <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Комплект отопительного контура HSM 32/7.5 DNA со сместителем DN 32 (3 шт. <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Группа безопасности котла 1*SV3/4* до 100 кВт <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">Пульт управления RC310 White <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">модуль MM100-C (3 шт.)  <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <p class="text text--kits__select">комплект датчика FV/FZ (3 шт.), комплект подключения бака – в/н AS1 <img
-                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt=""></p>
-                        </li>
-                        <li class="form__list__item">
-                          <span class="kits__select__price">130 000</span>
-                        </li>
-                        <input value="Отправить заявку" type='submit' class="button button--kits__select" />
-                        <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
-                          действует при заключении договора на монтаж</p>
-                      </ul>
-                    </form>
-                  </div>
+            </div>
+            <div class="kits__content">
+              <div class="kits__content__section kits__content__section-slider">
+                <img class="kits__slider__image" src="./img/pic/kits_3.png" alt="kit3" />
+              </div>
+              <div class="kits__content__section kits__content__section-select">
+                <div class="kits__select">
+                  <form action="" class="kits__select__form">
+                    <ul class="form__list">
+                      <li class="form__list__item" onchange="kitsFirst(this)">
+                        <select class="kits__select__item">
+                          <option disabled selected class="kits__select__option">Выберите котел</option>
+                          <option class="kits__select__option" value="Котел 1">Котел 1</option>
+                          <option class="kits__select__option" value="Котел 2">Котел 2</option>
+                          <option class="kits__select__option" value="Котел 3">Котел 3</option>
+                        </select>
+                        <span class="hint"><img class="icon icon-inText icon--kits__selec"
+                            src="./img/icons/option-icon.svg" alt="option">
+                          <span class="hint__text">хинт 1</span></span>
+                      </li>
+                      <li class="form__list__item" onchange="kitsSecond(this)">
+                        <select disabled class="kits__select__item">
+                          <option disabled selected class="kits__select__option">Выберите бойлер</option>
+                          <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
+                          <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
+                          <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
+                        </select>
+                        <span class="hint"><img class="icon icon-inText icon--kits__selec"
+                            src="./img/icons/option-icon.svg" alt="option">
+                          <span class="hint__text">хинт 1</span></span>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Гидравлическая стрелка WHY 120/80 <span class="hint"><img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 8</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Гребенка котла HKV 3/32/40 для 3 контуров <span
+                            class="hint"><img class="icon icon-inText icon--kits__selec"
+                              src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 9</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Комплект отопительного контура HSM 32/7.5 DNA со
+                          сместителем DN 32 (3 шт. <span class="hint"><img class="icon icon-inText icon--kits__selec"
+                              src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 10</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Группа безопасности котла 1*SV3/4* до 100 кВт <span
+                            class="hint"><img class="icon icon-inText icon--kits__selec"
+                              src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 11</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Пульт управления RC310 White <span class="hint"><img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 12</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">модуль MM100-C (3 шт.) <span class="hint"><img
+                              class="icon icon-inText icon--kits__selec" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 13</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">комплект датчика FV/FZ (3 шт.), комплект подключения бака –
+                          в/н AS1 <span class="hint"><img class="icon icon-inText icon--kits__selec"
+                              src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 1</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <span class="kits__select__price">130 000</span>
+                      </li>
+                      <button type='submit' class="button button--kits__select">Отправить заявку</button>
+                      <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
+                        действует при заключении договора на монтаж</p>
+                    </ul>
+                  </form>
                 </div>
               </div>
             </div>
@@ -459,48 +507,48 @@
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
-                <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                  <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
-                      <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                  <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
-                      <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                  <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
-                      <span class="text text--red">+ Волгарь-5-2360-C</span></h4> 
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                  <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
-                      <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
             <a href="" class="stock__item">
               <img src="./img/pic/stock_pic.png" alt="stock-item" class="img img--stock-item" />
               <div class="stock__item__description">
-                  <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310 
-                      <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Волгарь-5-2360-C</span></h4>
                 <span class="stock__item__description__price">944 180</span>
               </div>
             </a>
@@ -584,35 +632,35 @@
           <div class="product__section product__section-slider">
             <div class="owl-carousel owl-carousel--product owl-theme">
               <a href="" class="owl__item--product">
-                <img class="product__slider__image" src="./img/pic/stock_pic.png" alt="" />
+                <img class="product__slider__image" src="./img/pic/stock_pic.png" alt="stock1" />
                 <div class="product__slider__description">
                   <p class="product__slider__title">Астра 150</p>
                   <span class="product__slider__price">944 180</span>
                 </div>
               </a>
               <a href="" class="owl__item--product">
-                <img class="product__slider__image" src="./img/pic/stock_pic.png" alt="" />
+                <img class="product__slider__image" src="./img/pic/stock_pic.png" alt="stock2" />
                 <div class="product__slider__description">
                   <p class="product__slider__title">Астра 50M</p>
                   <span class="product__slider__price">389 205</span>
                 </div>
               </a>
               <a href="" class="owl__item--product">
-                <img class="product__slider__image" src="./img/pic/product_pic.png" alt="" />
+                <img class="product__slider__image" src="./img/pic/product_pic.png" alt="stock3" />
                 <div class="product__slider__description">
                   <p class="product__slider__title">Астра 15l</p>
                   <span class="product__slider__price">177 605</span>
                 </div>
               </a>
               <a href="" class="owl__item--product">
-                <img class="product__slider__image" src="./img/pic/stock_pic.png" alt="" />
+                <img class="product__slider__image" src="./img/pic/stock_pic.png" alt="stock4" />
                 <div class="product__slider__description">
                   <p class="product__slider__title">Астра 150</p>
                   <span class="product__slider__price">77 605</span>
                 </div>
               </a>
               <a href="" class="owl__item--product">
-                <img class="product__slider__image" src="./img/pic/stock_pic.png" alt="" />
+                <img class="product__slider__image" src="./img/pic/stock_pic.png" alt="stock5" />
                 <div class="product__slider__description">
                   <p class="product__slider__title">Пятый слайд</p>
                   <span class="product__slider__price">бесценен</span>
@@ -671,7 +719,7 @@
         <nav class="footer__nav">
           <a href="" class="nav__logo">
             <span class="logo__text">Инженерный центр</span>
-            <img src="./img/icons/logo_icon.svg" alt="" class="icon icon--logo">
+            <img src="./img/icons/logo_icon.svg" alt="Buderus" class="icon icon--logo">
           </a>
           <ul class="footer__nav__menu">
             <li class="menu__item">
@@ -705,7 +753,7 @@
 
   <script src="./js/jquery-3.4.1.min.js"></script>
   <script src="./js/owl.carousel.min.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="./js/main.min.js"></script>
 
   <!-- настройка слайдеров -->
   <script>
@@ -751,20 +799,12 @@
       dots: true,
       dotsContainer: '.tabs',
       mouseDrag: false,
-      animateIn: 'flipInX'
+      animateIn: 'flipInX',
+      touchDrag: false
     });
 
     $('.tabs__tab').click(function () {
       $(".owl-carousel--kits-content").trigger('to.owl.carousel', [$(this).index(), 300]);
-    });
-
-    $(".owl-carousel--kits").owlCarousel({
-      items: 1,
-      loop: true,
-      nav: false,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      dots: true
     });
 
     $(".owl-carousel--product").owlCarousel({
@@ -773,13 +813,11 @@
       dots: false,
       margin: 30,
       responsive: {
-        // breakpoint from 0 up
         0: {
           items: 1.3,
           nav: false,
           margin: 1
         },
-        // breakpoint from 480 up
         450: {
           items: 4
         }

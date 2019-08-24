@@ -273,6 +273,9 @@ a {
   flex-direction: column;
   align-items: center;
 }
+.advantages__item-sertificates {
+  cursor: pointer;
+}
 
 .advantages__item__section-icon {
   padding-bottom: 1.0416rem;
@@ -336,6 +339,8 @@ a {
 
 .kits__content {
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .kits__select__form {
@@ -344,7 +349,7 @@ a {
 }
 
 .kits__select__item {
-  width: 23.4375rem;
+  width: 21.5104rem;
   height: 3.125rem;
   font-size: 0.8333rem;
   color: #3c3c3b;
@@ -407,7 +412,7 @@ a {
   bottom: 1rem;
 }
 
-.kits__slider__image{
+.kits__slider__image {
   width: 30.5729rem !important;
   margin-right: 4rem;
 }
@@ -436,53 +441,78 @@ a {
 .kits__select__price::before {
   content: "от ";
 }
-.form__list__item{
+.form__list__item {
   display: list-item;
   vertical-align: middle;
   position: relative;
-  color: #9DAFBD;
+  color: #9dafbd;
 }
-.form__list__item:before{
-  content: '';
-  border: .5px solid #9DAFBD;
+.form__list__item:before {
+  content: "";
+  border: 0.5px solid #9dafbd;
   top: 25%;
   position: absolute;
-  left: -.9rem;
+  left: -0.9rem;
   height: 100%;
   z-index: -1;
 }
 
-.form__list__item:last-of-type:before{
+.form__list__item:last-of-type:before {
   height: 30%;
   top: 13%;
 }
-.form__list__item:nth-of-type(2):before{
+.form__list__item:nth-of-type(2):before {
   height: 74%;
   top: 38%;
 }
-.form__list__item:first-of-type:before{
+.form__list__item:first-of-type:before {
   top: 40%;
   height: 100%;
 }
 
-.form__list__item--active{
+.form__list__item--active {
   color: #000000;
 }
-.form__list__item--active:before{
-  border: .5px solid #000000;
+.form__list__item--active:before {
+  border: 0.5px solid #000000;
 }
 
-.kits__select__item:disabled{
-  opacity: .4;
+.kits__select__item:disabled {
+  opacity: 0.4;
 }
-.kits__content__section-select{
-  width: 40%;
+.kits__content__section-select {
   display: none;
+  width: 23.4375rem;
 }
 
-.owl-item.active .kits__content__section-select{
+.owl-item.active .kits__content__section-select {
   display: flex;
 }
+
+.hint {
+  position: relative;
+  width: fit-content;
+  display: inline;
+}
+
+.hint:hover .hint__text {
+  display: block;
+}
+
+.hint__text {
+  position: absolute;
+  display: none;
+  padding: 1rem;
+  border: 1px solid #3c3c3b;
+  background-color: #ffffff;
+  z-index: 1;
+  left: 0.8322rem;
+  top: 0.8322rem;
+  width: max-content;
+  color: #3c3c3b;
+  font-size: 0.7291rem;
+}
+
 /* Акция */
 
 .stock {
@@ -727,6 +757,10 @@ a {
   height: 9.1666rem;
 }
 
+.img--modal {
+  padding: 1rem;
+}
+
 /* Иконки */
 .icon {
   height: 0.8333rem;
@@ -951,7 +985,7 @@ h4 {
   line-height: 1.0937rem;
 }
 
-.text--red{
+.text--red {
   color: red;
 }
 
@@ -1092,5 +1126,42 @@ h4 {
     width: 33.3333rem;
     display: flex;
     justify-content: space-between;
+  }
 }
+
+.modal {
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: scroll;
+}
+
+.open {
+  display: flex !important;
+}
+
+.modal__close {
+  height: 1rem;
+  width: 1rem;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.modal__content {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-top: 20%;
+}
+
+.modal__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
