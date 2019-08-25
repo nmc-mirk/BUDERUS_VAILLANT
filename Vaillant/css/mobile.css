@@ -443,23 +443,4 @@
     left: 0;
     width: 75%;
   }
-
-  .img--modal{
-    width: 100%;
-  }
-
-  .modal__text{
-    flex-wrap: wrap;
-  }
-
-  .modal{
-    align-items: flex-start;
-    position: fixed;
-  }
-
-  .product__section-slider{
-    width: 100%;
-  }
-
-
 }

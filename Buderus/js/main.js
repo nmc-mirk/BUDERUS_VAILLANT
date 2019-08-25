@@ -29,8 +29,10 @@ function modalToggle() {
 
   if (!modal.classList.value.includes("open")) {
     modal.classList.add("open");
-    modal.style.top = `${-top}px`;
-    body.style.overflow = "hidden";
+    if(window.innerWidth > 450){
+      modal.style.top = `${-top}px`;
+      body.style.overflow = "hidden";
+    }
   } else {
     modal.classList.remove("open");
     body.style.overflow = "visible";
