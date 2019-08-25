@@ -14,9 +14,6 @@
   .advantages__section-items {
     flex-direction: column;
   }
-  .advantages__item {
-    padding-bottom: 2.2395rem;
-  }
 
   .advantages__item-sertificates {
     padding-bottom: unset;
@@ -41,6 +38,7 @@
   .tabs__tab {
     font-size: 0.7291rem;
     width: fit-content;
+    margin-right: unset;
   }
 
   .stock__section-items {
@@ -176,11 +174,11 @@
     top: -1rem;
     width: 6.7187rem;
     height: 3.802rem;
-    padding: 0.7812rem 0.5729rem;
+    padding: 0.7812rem 0.5729rem 0.7812rem 0;
   }
 
   .footer__nav .nav__logo {
-    top: -1rem;
+    top: 0;
   }
   .logo__text {
     font-size: 0.625rem;
@@ -221,8 +219,7 @@
   }
 
   .main__section-slider {
-    height: 31rem;
-    margin-bottom: 12rem;
+    height: unset;
     overflow: visible;
   }
 
@@ -282,7 +279,8 @@
   }
 
   .header__nav {
-    min-height: 2.8125rem;
+    min-height: 3.1770rem;
+    background-color: #ffffff;
     overflow: hidden;
   }
 
@@ -298,11 +296,10 @@
   .header__nav__menu--open {
     height: 11rem;
     transition: 0.5s;
-    padding-top: 4rem;
   }
 
   .header__nav .nav__logo {
-    top: 0;
+    position: unset;
   }
   .header__nav .menu__item {
     font-size: 0.7rem;
@@ -311,13 +308,13 @@
 
   .header__nav__burger {
     position: absolute;
-    top: 1rem;
+    top: 1.45rem;
     right: 1rem;
     cursor: pointer;
   }
 
   .burger__line {
-    border: 0.08rem solid #ffffff;
+    border: 0.08rem solid  #00917E;
     border-radius: 20%;
     width: 1rem;
     margin-bottom: 0.2rem;
@@ -442,5 +439,54 @@
   .hint__text {
     left: 0;
     width: 75%;
+  }
+
+  .slider__nav{
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    margin-top: 17rem;
+  }
+  .header__section-nav{
+    background-color: #ffffff;
+  }
+
+  .title--slider__nav{
+    color: #3C3C3B;
+    font-size: 1.4583rem;
+    line-height: 1.875rem;
+  }
+
+  .text--slider__nav{
+    color: #3C3C3B;
+    font-size: 0.7291rem;
+    line-height: 1.0937rem;
+  }
+
+  .slider__nav__item{
+    width: unset;
+    margin-bottom: 1.8229rem;
+  }
+
+  .slider__progress::after{
+    background-color: #D1DBE3;
+  }
+
+  .button--slider__nav{
+    height: 2.0833rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9375rem;
+  }
+
+  .advantages__section-title{
+    text-align: center;
+  }
+  .advantages__section-items{
+    align-items: center;
+  }
+  .advantages__item{
+    margin-bottom: 1.0416rem;
   }
 }

@@ -199,6 +199,44 @@ a {
   background-color: #046A5C;
 }
 
+.slider__nav{
+  position: absolute;
+  bottom: 1rem;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.slider__nav__item{
+  width: 18.75rem;
+  margin: 0 0.78125rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.slider__progress {
+  width: 0;
+  max-width: 100%;
+  height: 0.1041rem;
+}
+.active .slider__progress {
+  width: 0;
+  max-width: 100%;
+  height: 0.1041rem;
+  background: #00917E;
+}
+.slider__progress::after {
+  position: absolute;
+  content: '';
+  background-color: #ffffff;
+  width: 100%;
+  height: 0.1041rem;
+  z-index: -1;
+}
+
 /* Преимущества */
 .main__section-advantages {
   background-color: #EEEEEE;
@@ -333,7 +371,6 @@ a {
 
 .tabs {
   display: flex;
-  justify-content: space-between;
 }
 
 .tabs__tab {
@@ -342,6 +379,7 @@ a {
   font-size: 0.9375rem;
   background-color: unset;
   cursor: pointer;
+  margin-right: 1.5625rem;
 }
 
 .tabs__tab__input[type="radio"] {
@@ -846,6 +884,14 @@ h4 {
   padding: 0 0 2.0833rem 0;
 }
 
+.title--slider__nav{
+  color: #ffffff;
+  font-size: 1.7708rem;
+  line-height: 2.3958rem;
+  font-weight: 300;
+  padding-bottom: 0.4166rem;
+}
+
 /* Текст */
 .text--bold {
   font-weight: 600;
@@ -954,6 +1000,15 @@ h4 {
 
 .text--red {
   color: red;
+}
+
+.text--slider__nav{
+  font-size: 0.9375rem;
+  line-height: 1.3541rem;
+  color: #ffffff;
+  font-weight: 300;
+  padding-bottom: 0.9895rem;
+  margin-bottom: auto;
 }
 
 /* Ссылки */
@@ -1074,6 +1129,22 @@ h4 {
 .button--slider__table:focus {
   background-color: #ffffff;
   color: #9dafbd;
+}
+
+.button--slider__nav{
+  background-color: #00917E;
+  color: #ffffff;
+  font-size: 0.9375rem;
+  line-height: 1.1979rem;
+  font-weight: 300;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.9895rem;
+}
+.button--slider__nav:hover,
+.button--slider__nav:focus{
+  background-color: #046A5C;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 1920px) {
