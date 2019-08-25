@@ -1,15 +1,741 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Vaillant</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/tablet.min.css" />
+  <link rel="stylesheet" href="./css/mobile.min.css" />
 </head>
 <body>
-  <h1>Vaillant</h1>
+  <!-- хэдэр -->
+  <header class="header">
+    <div class="header__section header__section-top">
+      <div class="container--main">
+        <div class="header__top">
+          <div class="header__top__section header__top__section-email">
+            <div class="header__top__email">
+              <img class="icon icon--email" src="./img/icons/email_icon.svg" alt="email_icon" />
+              <a class="link link--email" href="mailto:info@pik-samara.ru">info@pik-samara.ru</a>
+            </div>
+          </div>
+          <div class="header__top__section header__top__section-phone">
+            <div class="header__top__phone">
+              <img class="icon icon--phone" src="./img/icons/phone_icon.svg" alt="phone_icon" />
+              <a class="link link--phone" href="tel:78469504729">+7 (846) 950-47-29</a>
+              <a class="link link--phone" href="tel:78469268229">+7 (846) 926-82-29</a>
+            </div>
+          </div>
+          <div class="header__top__section header__top__section-adress">
+            <div class="header__top__adress">
+              <img class="icon icon--adress" src="./img/icons/adress_icon.svg" alt="adress_icon" />
+              443112, г. Самара, Волжское шоссе, д. 7
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__section header__section-nav">
+      <div class="container--main">
+        <nav class="header__nav">
+          <a href="" class="nav__logo">
+            <span class="logo__text">Инженерный центр</span>
+            <img src="./img/icons/logo_icon.svg" alt="Buderus" class="icon icon--logo">
+          </a>
+          <ul class="header__nav__menu">
+            <li class="menu__item">
+              <a href="#advantages" class="link link--menu__item">Преимущества</a></li>
+            <li class="menu__item">
+              <a href="#kits" class="link link--menu__item">Комплекты «Vaillant»</a></li>
+            <li class="menu__item">
+              <a href="#stock" class="link link--menu__item">Акция</a></li>
+            <li class="menu__item">
+              <a href="#product" class="link link--menu__item">Станции «Юнилос»</a></li>
+            <li class="menu__item">
+              <a href="#contacts" class="link link--menu__item">Контакты</a></li>
+          </ul>
+          <div class="header__nav__burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- хэдер  -->
+  <!-- контент -->
+  <main class="main">
+    <!-- первая секция со слайдером -->
+    <section id='slider' class="main__section main__section-slider">
+        <div class="slider">
+            <div class="owl-carousel owl-carousel--main owl-theme">
+                <div class="owl__item--main">
+                  <img class="spec__slider__image" src="./img/pic/slider_section_bg.png" alt="spec1" />
+                </div>
+                <div class="owl__item--main">
+                  <img class="spec__slider__image" src="./img/pic/slider_section_bg.png" alt="spec1" />
+                </div>
+                <div class="owl__item--main">
+                  <img class="spec__slider__image" src="./img/pic/slider_section_bg.png" alt="spec1" />
+                </div>
+              </div>
+              <div class="slider__nav">
+                <div class="slider__nav__item">
+                  <h3 class="title title--slider__nav">Инженерный центр Vaillant</h3>
+                  <p class="text text--slider__nav">Это структура, созданная на базе первой инженерной компании. Наша задача - грамотное проектирование, поставка, монтаж и  обслуживание оборудования «Vaillant»</p>
+                  <div class="slider__progress"></div>
+                </div>
+                <div class="slider__nav__item">
+                  <h3 class="title title--slider__nav">Комплексный подход к системам отопления</h3>
+                  <p class="text text--slider__nav">Home is behind, the world ahead and there are many paths to tread through shadows to the.</p>
+                  <div class="slider__progress"></div>
+                </div>
+                <div class="slider__nav__item">
+                  <h3 class="title title--slider__nav">Сервисный центр</h3>
+                  <p class="text text--slider__nav">Home is behind, the world ahead and there are many paths to tread through shadows to the.</p>
+                  <a href='' class="button button--slider__nav">
+                    Открыть сайт
+                  </a>
+                  <div class="slider__progress"></div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- первая секция со слайдером -->
+    <!-- вторая секция - преимущества -->
+    <section id='advantages' class="main__section main__section-advantages">
+      <div class="container--main">
+        <div class="advantages">
+          <div class="advatages__section advantages__section-title">
+            <h2 class="title title--advantages">Наши преимущества</h2>
+          </div>
+          <div class="advatages__section advantages__section-items">
+            <div class="advantages__item advantages__item-experience">
+              <div class="advantages__item__section advantages__item__section-icon">
+                <img src="./img/icons/experience_icon.svg" alt="experience" class="icon icon--experience" />
+              </div>
+              <div class="advantages__item__section advantages__item__section-title">
+                <h3 class="title title--experience">Опыт</h3>
+              </div>
+              <div class="advantages__item__section advantages__item__section-description">
+                <p class="text text--experience">
+                  Квалифицированный подбор, проектирование и монтаж
+                  оборудования Buderus.
+                </p>
+              </div>
+            </div>
+            <div class="advantages__item advantages__item-garantee">
+              <div class="advantages__item__section advantages__item__section-icon">
+                <img src="./img/icons/garantee_icon.svg" alt="garantee" class="icon icon--garantee" />
+              </div>
+              <div class="advantages__item__section advantages__item__section-title">
+                <h3 class="title title--garantee">Гарантия</h3>
+              </div>
+              <div class="advantages__item__section advantages__item__section-description">
+                <p class="text text-garanteee">
+                  Гарантийное, сервисное обслуживание поставленного
+                  оборудования, и поставки непосредственно от производителя
+                </p>
+              </div>
+            </div>
+            <div class="advantages__item advantages__item-price">
+              <div class="advantages__item__section advantages__item__section-icon">
+                <img src="./img/icons/price_icon.svg" alt="price" class="icon icon--price" />
+              </div>
+              <div class="advantages__item__section advantages__item__section-title">
+                <h3 class="title title--price">Цена</h3>
+              </div>
+              <div class="advantages__item__section advantages__item__section-description">
+                <p class="text text--price">
+                  Выгодная цена на комплекты оборудования Buderus и на
+                  дополнительное оборудование других брендов
+                </p>
+              </div>
+            </div>
+            <div class="advantages__item advantages__item-sertificates" onclick="modalToggle()">
+              <div class="advantages__item__section advantages__item__section-icon">
+                <img src="./img/icons/sertificates_icon.svg" alt="sertificates" class="icon icon--sertificates" />
+              </div>
+              <div class="advantages__item__section advantages__item__section-title">
+                <h3 class="title title--sertificates">Сертификаты</h3>
+              </div>
+              <div class="advantages__item__section advantages__item__section-description">
+                <p class="text text--sertificates"></p>
+              </div>
+            </div>
+            <div class="modal">
+              <div class="modal__content">
+                <div onclick="modalToggle()" class="modal__close"><img src="./img/icons/cross__icon.svg" alt="close">
+                </div>
+                <div class="modal__text">
+                  <img class="image img--modal" src="./img/pic/modal.jpg" alt="certificate">
+                  <img class="image img--modal" src="./img/pic/modal.jpg" alt="certificate">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- вторая секция - преимущества -->
+    <!-- третья секцмя - специфика -->
+    <section id='specs' class="main__section main__section-specs">
+      <div class="container--main">
+        <div class="specs">
+          <div class="specs__section specs__section-title">
+            <h2 class="title title--specs">
+              Cпецифика предлагаемого оборудования
+            </h2>
+          </div>
+          <div class="specs__section specs__section-slider">
+            <div class="owl-carousel owl-carousel--spec owl-theme">
+              <div class="owl__item--spec">
+                <img class="spec__slider__image" src="./img/pic/specs_pic.png" alt="spec1" />
+              </div>
+              <div class="owl__item--spec">
+                <img class="spec__slider__image" src="./img/pic/specs_pic.png" alt="spec2" />
+              </div>
+              <div class="owl__item--spec">
+                <img class="spec__slider__image" src="./img/pic/specs_pic.png" alt="spec3" />
+              </div>
+            </div>
+          </div>
+          <div class="specs__section specs__section-description">
+            <h3 class="title title--specs-description">Комплекты</h3>
+            <p class="text text--specs-description">
+                Полная комплектация котельной, оборудования объекта, необходимого Заказчику.  Как следствие более выгодная цена. Это позволяет окончательно упростить задачу, связанную с поиском более выгодных предложений
+            </p>
+            <h3 class="title title--specs-description">
+              Инновационная техника
+            </h3>
+            <p class="text text--specs-description">
+                Солнечные гелиосистемы, конденсатная техника реализуется в 95 % случаях через более подготовленные, технически грамотные «Инженерные центры «Buderus»
+            </p>
+            <h3 class="title title--specs-description">
+              Дополнительное оборудование
+            </h3>
+            <p class="text text--specs-description">
+              Мы сотрудничаем с такими компаниями как
+              <span class="text text--bold">HENKO, SANHA, WILO, GRUNDFOS, BUGATTI, REFLEX</span>
+              приобретаемое через «Инженерный центр» так же имеет
+              отличительную ценовую специфику.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- третья секцмя - специфика -->
+    <!-- ад на земле или четвертая секция - комплекты -->
+    <section id='kits' class="main__section main__section-kits">
+      <div class="kits">
+        <div class="container--main">
+          <div class="kits__section kits__section-title">
+            <h2 class="title title--kits">Комплекты</h2>
+          </div>
+          <div class="kits__section kits__section-description">
+            <p class="text text--kits-description">
+              Подберите необходимый вам комплект полной комплектации
+              котельной. Для этого последовательно выберите сначала
+              необходимый котел, а затем бойлер. Подробную информация о
+              характеристиках любого оборудования вы сможете найти, кликнув на
+              кнопку
+              <img class="icon icon--i icon-inText" src="./img/icons/i_icon.svg" alt="button" />
+              рядом с названием товара.
+            </p>
+          </div>
+          <div class="kits__section kits__section-tabs">
+            <ul class="tabs">
+              <li class="tabs__tab">С настенными традиционными котлами</li>
+              <li class="tabs__tab">С напольными традиционными котлами</li>
+              <li class="tabs__tab">С настенными конденсатными котлами</li>
+            </ul>
+          </div>
+        </div>
+        <div class="kits__section kits__section-content">
+          <div class="owl-carousel owl-carousel--kits-content owl-theme">
+            <div class="kits__content">
+              <div class="kits__content__section kits__content__section-slider">
+                <img class="kits__slider__image" src="./img/pic/kits_1.png" alt="kit1" />
+              </div>
+              <div class="kits__content__section kits__content__section-select">
+                <div class="kits__select">
+                  <form action="" class="kits__select__form">
+                    <ul class="form__list">
+                      <li class="form__list__item" onchange="kitsFirst(this)">
+                        <select class="kits__select__item">
+                          <option disabled selected class="kits__select__option">Выберите котел</option>
+                          <option class="kits__select__option" value="Котел 1">Котел 1</option>
+                          <option class="kits__select__option" value="Котел 2">Котел 2</option>
+                          <option class="kits__select__option" value="Котел 3">Котел 3</option>
+                        </select>
+                        <span class="hint"><img class="icon icon-inText icon--kits__select"
+                            src="./img/icons/option-icon.svg" alt="option">
+                          <span class="hint__text">хинт jklhjkl</span></span>
+                      </li>
+                      <li class="form__list__item" onchange="kitsSecond(this)">
+                        <select disabled class="kits__select__item">
+                          <option disabled selected class="kits__select__option">Выберите бойлер</option>
+                          <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
+                          <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
+                          <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
+                        </select>
+                        <span class="hint"><img class="icon icon-inText icon--kits__select"
+                            src="./img/icons/option-icon.svg" alt="option">
+                          <span class="hint__text">хинт lhjk;hjk;</span></span>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Автоматика multiMATIC 700/6 <span class="hint"><img
+                              class="icon icon-inText t" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 8957897</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Датчик температуры водонагревателя <span class="hint"><img
+                              class="icon icon-inText icon--kits__select" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 0</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Датчик температуры водонагревателя <span class="hint"><img
+                              class="icon icon-inText icon--kits__select" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 0</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <span class="kits__select__price">130 000</span>
+                      </li>
+                      <button type='submit' class="button button--kits__select">Отправить заявку</button>
+                      <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
+                        действует при заключении договора на монтаж</p>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="kits__content">
+              <div class="kits__content__section kits__content__section-slider">
+                <img class="kits__slider__image" src="./img/pic/kits_2.png" alt="kit2" />
+              </div>
+              <div class="kits__content__section kits__content__section-select">
+                <div class="kits__select">
+                  <form action="" class="kits__select__form">
+                    <ul class="form__list">
+                      <li class="form__list__item" onchange="kitsFirst(this)">
+                        <select class="kits__select__item">
+                          <option disabled selected class="kits__select__option">Выберите котел</option>
+                          <option class="kits__select__option" value="Котел 1">Котел 1</option>
+                          <option class="kits__select__option" value="Котел 2">Котел 2</option>
+                          <option class="kits__select__option" value="Котел 3">Котел 3</option>
+                        </select>
+                        <span class="hint"><img class="icon icon-inText icon--kits__select"
+                            src="./img/icons/option-icon.svg" alt="option">
+                          <span class="hint__text">хинт 1</span></span>
+                      </li>
+                      <li class="form__list__item" onchange="kitsSecond(this)">
+                        <select disabled class="kits__select__item">
+                          <option disabled selected class="kits__select__option">Выберите бойлер</option>
+                          <option class="kits__select__option" value="Бойлер 1">Бойлер 1</option>
+                          <option class="kits__select__option" value="Бойлер 2">Бойлер 2</option>
+                          <option class="kits__select__option" value="Бойлер 3">Бойлер 3</option>
+                        </select>
+                        <span class="hint"><span class="hint"><img class="icon icon-inText icon--kits__select"
+                              src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 2</span></span>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Гидравлический разделитель WH 40 3.5 м³/ч <img
+                            class="icon icon-inText icon--kits__select" src="./img/icons/option-icon.svg" alt="option">
+                        </p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Коллектор 2 контура <span class="hint"><img
+                              class="icon icon-inText icon--kits__select" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 3</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Группа безопасности для водонагревателей <span class="hint"><img
+                              class="icon icon-inText icon--kits__select" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 4</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Группа безопасности для водонагревателей <span class="hint"><img
+                              class="icon icon-inText icon--kits__select" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 5</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Насосная группа со сместителем R 1 (2 шт.) <span
+                            class="hint"><img class="icon icon-inText icon--kits__select"
+                              src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 6</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Погодозависимый регулятор multiMATIC VRC 700/6 <span class="hint"><img
+                              class="icon icon-inText icon--kits__select" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 7</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <p class="text text--kits__select">Сместительный модуль VR 71 <span class="hint"><img
+                              class="icon icon-inText icon--kits__select" src="./img/icons/option-icon.svg" alt="option">
+                            <span class="hint__text">хинт 7</span></span></p>
+                      </li>
+                      <li class="form__list__item">
+                        <span class="kits__select__price">130 000</span>
+                      </li>
+                      <button type='submit' class="button button--kits__select">Отправить заявку</button>
+                      <p class="text text--kits__select__bottom">* Указанная цена не является публичной офертой,
+                        действует при заключении договора на монтаж</p>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ад на земле или четвертая секция - комплекты -->
+    <!-- пятая секция - акция -->
+    <section id='stock' class="main__section main__section-stock">
+      <div class="container--main">
+        <div class="stock">
+          <div class="stock__section stock__section-title">
+            <h2 class="title title--stock">Акция</h2>
+          </div>
+          <div class="stock__section stock__section-description">
+            <p class="text text--stock-description">
+              Цены на комплекты с настенными конденсатными котлами и системами
+              биологической очистки сточных вод «Юнилос»
+            </p>
+            <p class="text text--stock-description">
+              (Для коттеджей от 200 до 500 м/кв)
+            </p>
+          </div>
+          <div class="stock__section stock__section-items">
+            <a href="" class="stock__item">
+              <img src="./img/pic/stock_1.png" alt="stock-item" class="img img--stock-item" />
+              <div class="stock__item__description">
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Юнилос-5-2360-C</span></h4>
+                <span class="stock__item__description__price">944 180</span>
+              </div>
+            </a>
+            <a href="" class="stock__item">
+              <img src="./img/pic/stock_2.png" alt="stock-item" class="img img--stock-item" />
+              <div class="stock__item__description">
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Юнилос-5-2360-C</span></h4>
+                <span class="stock__item__description__price">944 180</span>
+              </div>
+            </a>
+            <a href="" class="stock__item">
+              <img src="./img/pic/stock_3.png" alt="stock-item" class="img img--stock-item" />
+              <div class="stock__item__description">
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Юнилос-5-2360-C</span></h4>
+                <span class="stock__item__description__price">944 180</span>
+              </div>
+            </a>
+            <a href="" class="stock__item">
+              <img src="./img/pic/stock_4.png" alt="stock-item" class="img img--stock-item" />
+              <div class="stock__item__description">
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Юнилос-5-2360-C</span></h4>
+                <span class="stock__item__description__price">944 180</span>
+              </div>
+            </a>
+            <a href="" class="stock__item">
+              <img src="./img/pic/stock_5.png" alt="stock-item" class="img img--stock-item" />
+              <div class="stock__item__description">
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Юнилос-5-2360-C</span></h4>
+                <span class="stock__item__description__price">944 180</span>
+              </div>
+            </a>
+            <a href="" class="stock__item">
+              <img src="./img/pic/stock_6.png" alt="stock-item" class="img img--stock-item" />
+              <div class="stock__item__description">
+                <h4 class="title title--stock-item">Котел Logano G234-38 КВт, бойлер Logalux SU 200/5, MC 110 + RC 310
+                  <span class="text text--red">+ Юнилос-5-2360-C</span></h4>
+                <span class="stock__item__description__price">944 180</span>
+              </div>
+            </a>
+          </div>
+          <div class="stock__section stock__section-text">
+            <p class="text text--stock-text">
+              Указанная цена не является публичной офертой, действует при
+              заключении договора на монтаж
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- пятая секция - акция -->
+    <!-- шестая секция - форма обратной связи -->
+    <section id='feedback' class="main__section main__section-feedback">
+      <div class="container--main">
+        <div class="feedback">
+          <div class="feedback__section feedback__section-title">
+            <h2 class="title title--feedback">
+              Не нашли подходящий для Вас комплект?
+            </h2>
+          </div>
+          <div class="feedback__section feedback__section-description">
+            <p class="text text--feedback-description-big">
+              Заполните форму обратной связи и/или пришлите для расчета свой
+              комплект
+            </p>
+            <p class="text text--feedback-description">
+              *Комплект должен состоять из 4 единиц оборудования Buderus.
+              Предложенная цена будет действительна, только при заключении
+              договора на монтаж данного оборудования
+            </p>
+          </div>
+          <div class="feedback__section feedback__section-form">
+            <form class="feedback__form" action="">
+              <input placeholder="Почта" type="text" class="input input--mail" />
+              <input placeholder="ФИО" type="text" class="input input--name" />
+              <input placeholder="Комплект, комментарий" type="text" class="input input--message" />
+              <button class="button button--form">Отправить</button>
+            </form>
+          </div>
+          <div class="feedback__section feedback__section-policy">
+            <p class="text text--feedback-policy">
+              Нажимая кнопку «Отправить», я соглащаюсь с
+              <a class="link link--feedback-policy" href="">политикой обработки персональных данных</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- шестая секция - форма обратной связи -->
+    <!-- седьмая секция - инфо -->
+    <section id='info' class="main__section main__section-info">
+      <div class="container--main">
+        <div class="info">
+          <div class="info__item info__item--big">
+            Автономная система очистки сточных вод «Юнилос» незаменима там,
+            где невозможно подключиться к центральной канализационной сети
+          </div>
+          <div class="info__item">
+            ООО «Первая Инженерная Компания реализует со своего склада в г.
+            Самара локальные очистные сооружения канализации модельного ряда
+            Юнилос. Уникальное оборудование для очистки сточных вод
+            базируется на лучших решениях и достижениях в области автономного
+            водоотведения и очистки стоков
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- седьмая секция - инфо -->
+    <!-- восьмая секция - станции Юнилос -->
+    <section id='product' class="main__section main__section-product">
+      <div class="container--main">
+        <div class="product">
+          <div class="product__section product__section-title">
+            <h2 class="title title--product">
+              Станции биологической очистки «Юнилос»
+            </h2>
+          </div>
+          <div class="product__section product__section-slider">
+            <div class="owl-carousel owl-carousel--product owl-theme">
+              <a href="" class="owl__item--product">
+                <img class="product__slider__image" src="./img/pic/product_3.png" alt="stock1" />
+                <div class="product__slider__description">
+                  <p class="product__slider__title">Астра 150</p>
+                  <span class="product__slider__price">944 180</span>
+                </div>
+              </a>
+              <a href="" class="owl__item--product">
+                <img class="product__slider__image" src="./img/pic/product_1.png" alt="stock2" />
+                <div class="product__slider__description">
+                  <p class="product__slider__title">Астра 50M</p>
+                  <span class="product__slider__price">389 205</span>
+                </div>
+              </a>
+              <a href="" class="owl__item--product">
+                <img class="product__slider__image" src="./img/pic/product_2.png" alt="stock3" />
+                <div class="product__slider__description">
+                  <p class="product__slider__title">Астра 15l</p>
+                  <span class="product__slider__price">177 605</span>
+                </div>
+              </a>
+              <a href="" class="owl__item--product">
+                <img class="product__slider__image" src="./img/pic/product_3.png" alt="stock4" />
+                <div class="product__slider__description">
+                  <p class="product__slider__title">Астра 150</p>
+                  <span class="product__slider__price">77 605</span>
+                </div>
+              </a>
+              <a href="" class="owl__item--product">
+                <img class="product__slider__image" src="./img/pic/product_4.png" alt="stock5" />
+                <div class="product__slider__description">
+                  <p class="product__slider__title">Пятый слайд</p>
+                  <span class="product__slider__price">бесценен</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="product__section product__section-text">
+            <p class="text text--product">
+              Указанная цена не является публичной офертой, действует при
+              заключении договора на монтаж
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- восьмая секция - станции Юнилос -->
+    <!-- девятая секция - контакты -->
+    <section id='contacts' class="main__section main__section-contacts">
+      <div class="container--main">
+        <div class="contacts">
+          <div class="contacts__section contacts__section-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.2745306821053!2d50.231753398964315!3d53.341453304779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41663d443f588549%3A0x826c74ade0f3afe8!2z0JLQvtC70LbRgdC60L7QtSDRiC4sIDcsINCh0LDQvNCw0YDQsCwg0KHQsNC80LDRgNGB0LrQsNGPINC-0LHQuy4sIDQ0MzExMg!5e0!3m2!1sru!2sru!4v1566078107808!5m2!1sru!2sru"
+              width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <div class="contacts__section contacts__section-content">
+            <h2 class="title title--contacts">Наши контакты</h2>
+            <div class="contacts__content__item contacts__content__item--email">
+              <img class="icon icon--contacts-email" src="./img/icons/email-black_icon.svg" alt="email" />
+              <div class="contacts__content__item__links">
+                <a href="" class="link link--contacts-email">info@pik-samara.ru</a>
+              </div>
+            </div>
+            <div class="contacts__content__item contacts__content__item--phone">
+              <img class="icon icon--contacts-phone" src="./img/icons/phone-black_icon.svg" alt="phone" />
+              <div class="contacts__content__item__links">
+                <a href="tel:78469504729" class="link link--contacts-phone">+7 (846) 950-47-29</a>
+                <a href="tel:78469268229" class="link link--contacts-phone">+7 (846) 926-82-29</a>
+                <a href="tel:78462770164" class="link link--contacts-phone">+7 (846) 277-01-64</a>
+              </div>
+            </div>
+            <p class="text text--contacts">
+              Телефон сервисной службы работает 24/7
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- девятая секция - контакты -->
+  </main>
+  <!-- футер -->
+  <footer class="footer">
+    <div class="footer__section footer__section-nav">
+      <div class="container--main">
+        <nav class="footer__nav">
+          <a href="" class="nav__logo">
+            <span class="logo__text">Инженерный центр</span>
+            <img src="./img/icons/logo_icon.svg" alt="Buderus" class="icon icon--logo">
+          </a>
+          <ul class="footer__nav__menu">
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Специфика</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Комплекты «Vaillant»</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Акция</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Станции «Юнилос»</a></li>
+            <li class="menu__item">
+              <a href="" class="link link--menu__item">Контакты</a></li>
+          </ul>
+          <div class="footer__nav__privacy">
+            <p class="text text--privacy__design">©2019 - Design by Utenyshev</p>
+            <a target="_blank" href="https://mirk.space" class="link link--madeby">Made by Vermqa</a>
+            <a href="" class="link link--politics">Политика конфиденциальности</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__section footer__section-bottom">
+      <div class="container--main">
+        <p class="text text--footer-bottom">
+          Все указанные на сайте цены не являются публичной офертой
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- футер -->
 
-  <script src="./js/main.js"></script>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/main.min.js"></script>
+
+  <!-- настройка слайдеров -->
+  <script>
+    function startProgressBar() {
+  // apply keyframe animation
+  $(".slider__progress").css({
+    width: "100%",
+    transition: "width 5000ms"
+  });
+}
+
+function resetProgressBar() {
+  $(".slider__progress").css({
+    width: 0,
+    transition: "width 0s"
+  });
+}
+    $(".owl-carousel--main").owlCarousel({
+      items: 1,
+      loop: true,
+      nav: false,
+      dots: true,
+      navSpeed: 1000,
+      autoplay: true,
+      onInitialized: startProgressBar,
+      onTranslate: resetProgressBar,
+      onTranslated: startProgressBar,
+      dotsContainer: '.slider__nav',
+    });
+
+    $('.slider__nav__item').click(function () {
+      $(".owl-carousel--main").trigger('to.owl.carousel', [$(this).index(), 300]);
+    });
+
+    $(".owl-carousel--spec").owlCarousel({
+      items: 1,
+      loop: true,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      dots: true
+    });
+
+    $(".owl-carousel--kits-content").owlCarousel({
+      items: 1,
+      dots: true,
+      dotsContainer: '.tabs',
+      mouseDrag: false,
+      animateIn: 'flipInX',
+      touchDrag: false
+    });
+
+    $('.tabs__tab').click(function () {
+      $(".owl-carousel--kits-content").trigger('to.owl.carousel', [$(this).index(), 300]);
+    });
+
+    $(".owl-carousel--product").owlCarousel({
+      loop: true,
+      nav: true,
+      dots: false,
+      margin: 10,
+      responsive: {
+        0: {
+          items: 1.3,
+          nav: false,
+          margin: 10
+        },
+        450: {
+          items: 4
+        }
+      }
+    });
+  </script>
 </body>
+
 </html>
